@@ -5,8 +5,10 @@
 /vendor
 /.idea
 /.vagrant
+/lamp
 Homestead.json
 Homestead.yaml
 npm-debug.log
 yarn-error.log
 .env
+docker-compose.yml
