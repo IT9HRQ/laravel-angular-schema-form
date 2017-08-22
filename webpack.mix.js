@@ -11,5 +11,14 @@ let mix = require('laravel-mix');
  |
  */
 
+mix.webpackConfig({
+    module: {
+        loaders: [{
+            test: /\.html$/,
+            loader: "file-to-string-loader"
+        }]
+    }
+});
+
 mix.js('resources/assets/js/app.js', 'public/js')
    .sass('resources/assets/sass/app.scss', 'public/css');
