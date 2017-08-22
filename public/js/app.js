@@ -9486,9 +9486,7 @@ __webpack_require__(126);
 
 angular.module("app", ["app.require", "ui.router"]).config(function ($stateProvider, $urlRouterProvider) {
     $urlRouterProvider.otherwise("/");
-    $stateProvider.state("home", { url: "/", template: "Prova<page-home/>", controller: function controller() {
-            console.log("runehome");
-        } });
+    $stateProvider.state("home", { url: "/", template: "<page-home/>" });
 });
 
 /***/ }),
@@ -76588,7 +76586,7 @@ angular.module("app.require").component("layout", {
 /* 125 */
 /***/ (function(module, exports) {
 
-module.exports = "<div id=\"content\">\n    <section ui-view></section>\n</div>";
+module.exports = "<div class=\"container\">\n    <section ui-view></section>\n</div>";
 
 /***/ }),
 /* 126 */

@@ -8,7 +8,5 @@ angular
     .component("layout", {
         bindings: {},
         template: require("./layout.html"),
-        controller: function($scope) {
-            console.log("layout cot");
-        }
+        controller: function($scope) {}
     });

@@ -9,7 +9,5 @@ angular
     .config(function($stateProvider, $urlRouterProvider) {
         $urlRouterProvider.otherwise("/");
         $stateProvider
-            .state("home", { url: "/", template: "Prova<page-home/>", controller:function(){
-            console.log("runehome");
-            } })
+            .state("home", { url: "/", template: "<page-home/>" })
     });
