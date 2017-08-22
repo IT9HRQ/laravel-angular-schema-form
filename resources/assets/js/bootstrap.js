@@ -15,6 +15,7 @@ try {
 
 window.angular = require("angular");
 require("angular-ui-router");
+require("angular-schema-form");
 
 /**
  * We'll load the axios HTTP library which allows us to easily issue requests

@@ -11,6 +11,8 @@
   },
   "devDependencies": {
     "angular": "^1.6.6",
+    "angular-schema-form": "^0.8.13",
+    "angular-schema-form-bootstrap": "^0.2.0",
     "angular-ui-router": "^1.0.3",
     "axios": "^0.16.2",
     "bootstrap-sass": "^3.3.7",

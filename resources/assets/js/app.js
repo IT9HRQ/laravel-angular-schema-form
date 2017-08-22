@@ -5,7 +5,7 @@ require("./components/layout/layout");
 require("./components/page-home/page-home");
 
 angular
-    .module("app", ["app.require", "ui.router"])
+    .module("app", ["app.require", "ui.router", "schemaForm"])
     .config(function($stateProvider, $urlRouterProvider) {
         $urlRouterProvider.otherwise("/");
         $stateProvider
