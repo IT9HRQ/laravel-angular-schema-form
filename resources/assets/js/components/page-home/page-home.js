@@ -8,6 +8,5 @@ angular
     .component("pageHome", {
         bindings: {},
         template: require("./page-home.html"),
-        controller: function($scope) {
-        }
+        controller: function($scope) {}
     });

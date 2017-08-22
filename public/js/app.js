@@ -732,7 +732,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
  */
 /** */
 var hof_1 = __webpack_require__(2);
-var stateObject_1 = __webpack_require__(24);
+var stateObject_1 = __webpack_require__(25);
 var toStr = Object.prototype.toString;
 var tis = function (t) { return function (x) { return typeof (x) === t; }; };
 exports.isUndefined = tis('undefined');
@@ -1051,7 +1051,7 @@ function __export(m) {
     for (var p in m) if (!exports.hasOwnProperty(p)) exports[p] = m[p];
 }
 Object.defineProperty(exports, "__esModule", { value: true });
-__export(__webpack_require__(16));
+__export(__webpack_require__(17));
 __export(__webpack_require__(76));
 __export(__webpack_require__(77));
 __export(__webpack_require__(78));
@@ -1073,7 +1073,7 @@ __export(__webpack_require__(95));
 
 
 var bind = __webpack_require__(61);
-var isBuffer = __webpack_require__(106);
+var isBuffer = __webpack_require__(111);
 
 /*global toString:true*/
 
@@ -1393,7 +1393,7 @@ var predicates_1 = __webpack_require__(1);
 var rejectFactory_1 = __webpack_require__(12);
 var common_1 = __webpack_require__(0);
 var hof_1 = __webpack_require__(2);
-var transition_1 = __webpack_require__(18);
+var transition_1 = __webpack_require__(19);
 var resolvable_1 = __webpack_require__(14);
 /**
  * Returns a string shortened to a maximum length
@@ -1939,7 +1939,7 @@ var common_1 = __webpack_require__(0);
 var hof_1 = __webpack_require__(2);
 var predicates_1 = __webpack_require__(1);
 var coreservices_1 = __webpack_require__(3);
-var paramType_1 = __webpack_require__(28);
+var paramType_1 = __webpack_require__(29);
 /** @hidden */ var hasOwn = Object.prototype.hasOwnProperty;
 /** @hidden */ var isShorthand = function (cfg) {
     return ["value", "type", "squash", "array", "dynamic"].filter(hasOwn.bind(cfg || {})).length === 0;
@@ -2135,7 +2135,7 @@ exports.Param = Param;
 "use strict";
 
 Object.defineProperty(exports, "__esModule", { value: true });
-var ng_from_import = __webpack_require__(23);
+var ng_from_import = __webpack_require__(16);
 var ng_from_global = angular;
 exports.ng = (ng_from_import && ng_from_import.module) ? ng_from_import : ng_from_global;
 //# sourceMappingURL=angular.js.map
@@ -2612,7 +2612,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
  * @module vanilla
  */
 /** */
-var index_1 = __webpack_require__(16);
+var index_1 = __webpack_require__(17);
 var common_1 = __webpack_require__(0);
 var beforeAfterSubstr = function (char) { return function (str) {
     if (!str)
@@ -2678,6 +2678,14 @@ exports.locationPluginFactory = locationPluginFactory;
 /* 16 */
 /***/ (function(module, exports, __webpack_require__) {
 
+__webpack_require__(74);
+module.exports = angular;
+
+
+/***/ }),
+/* 17 */
+/***/ (function(module, exports, __webpack_require__) {
+
 "use strict";
 
 function __export(m) {
@@ -2687,16 +2695,16 @@ Object.defineProperty(exports, "__esModule", { value: true });
 /** @module common */ /** for typedoc */
 __export(__webpack_require__(0));
 __export(__webpack_require__(3));
-__export(__webpack_require__(17));
+__export(__webpack_require__(18));
 __export(__webpack_require__(2));
 __export(__webpack_require__(1));
-__export(__webpack_require__(25));
+__export(__webpack_require__(26));
 __export(__webpack_require__(6));
 __export(__webpack_require__(7));
 //# sourceMappingURL=index.js.map
 
 /***/ }),
-/* 17 */
+/* 18 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2785,7 +2793,7 @@ exports.Glob = Glob;
 //# sourceMappingURL=glob.js.map
 
 /***/ }),
-/* 18 */
+/* 19 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2803,13 +2811,13 @@ var predicates_1 = __webpack_require__(1);
 var hof_1 = __webpack_require__(2);
 var interface_1 = __webpack_require__(9); // has or is using
 var transitionHook_1 = __webpack_require__(13);
-var hookRegistry_1 = __webpack_require__(26);
+var hookRegistry_1 = __webpack_require__(27);
 var hookBuilder_1 = __webpack_require__(34);
-var pathFactory_1 = __webpack_require__(19);
+var pathFactory_1 = __webpack_require__(20);
 var targetState_1 = __webpack_require__(8);
 var param_1 = __webpack_require__(10);
 var resolvable_1 = __webpack_require__(14);
-var resolveContext_1 = __webpack_require__(20);
+var resolveContext_1 = __webpack_require__(21);
 /** @hidden */
 var stateSelf = hof_1.prop("self");
 /**
@@ -3418,7 +3426,7 @@ exports.Transition = Transition;
 //# sourceMappingURL=transition.js.map
 
 /***/ }),
-/* 19 */
+/* 20 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -3428,7 +3436,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 var common_1 = __webpack_require__(0);
 var hof_1 = __webpack_require__(2);
 var targetState_1 = __webpack_require__(8);
-var pathNode_1 = __webpack_require__(27);
+var pathNode_1 = __webpack_require__(28);
 /**
  * This class contains functions which convert TargetStates, Nodes and paths from one type to another.
  */
@@ -3597,7 +3605,7 @@ exports.PathUtils = PathUtils;
 //# sourceMappingURL=pathFactory.js.map
 
 /***/ }),
-/* 20 */
+/* 21 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -3611,7 +3619,7 @@ var trace_1 = __webpack_require__(7);
 var coreservices_1 = __webpack_require__(3);
 var interface_1 = __webpack_require__(35);
 var resolvable_1 = __webpack_require__(14);
-var pathFactory_1 = __webpack_require__(19);
+var pathFactory_1 = __webpack_require__(20);
 var strings_1 = __webpack_require__(6);
 var when = interface_1.resolvePolicies.when;
 var ALL_WHENS = [when.EAGER, when.LAZY];
@@ -3803,7 +3811,7 @@ var UIInjectorImpl = (function () {
 //# sourceMappingURL=resolveContext.js.map
 
 /***/ }),
-/* 21 */
+/* 22 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -4312,7 +4320,7 @@ exports.UrlMatcher = UrlMatcher;
 //# sourceMappingURL=urlMatcher.js.map
 
 /***/ }),
-/* 22 */
+/* 23 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -4363,15 +4371,14 @@ exports.BaseLocationServices = BaseLocationServices;
 //# sourceMappingURL=baseLocationService.js.map
 
 /***/ }),
-/* 23 */
-/***/ (function(module, exports, __webpack_require__) {
+/* 24 */
+/***/ (function(module, exports) {
 
-__webpack_require__(74);
-module.exports = angular;
 
+angular.module("app.require", []);
 
 /***/ }),
-/* 24 */
+/* 25 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -4379,7 +4386,7 @@ module.exports = angular;
 Object.defineProperty(exports, "__esModule", { value: true });
 var common_1 = __webpack_require__(0);
 var hof_1 = __webpack_require__(2);
-var glob_1 = __webpack_require__(17);
+var glob_1 = __webpack_require__(18);
 var predicates_1 = __webpack_require__(1);
 /**
  * Internal representation of a UI-Router state.
@@ -4491,7 +4498,7 @@ exports.StateObject = StateObject;
 //# sourceMappingURL=stateObject.js.map
 
 /***/ }),
-/* 25 */
+/* 26 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -4543,7 +4550,7 @@ exports.Queue = Queue;
 //# sourceMappingURL=queue.js.map
 
 /***/ }),
-/* 26 */
+/* 27 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -4556,7 +4563,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 var common_1 = __webpack_require__(0);
 var predicates_1 = __webpack_require__(1);
 var interface_1 = __webpack_require__(9); // has or is using
-var glob_1 = __webpack_require__(17);
+var glob_1 = __webpack_require__(18);
 /**
  * Determines if the given state matches the matchCriteria
  *
@@ -4705,7 +4712,7 @@ exports.makeEvent = makeEvent;
 //# sourceMappingURL=hookRegistry.js.map
 
 /***/ }),
-/* 27 */
+/* 28 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -4788,7 +4795,7 @@ exports.PathNode = PathNode;
 //# sourceMappingURL=pathNode.js.map
 
 /***/ }),
-/* 28 */
+/* 29 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -4936,7 +4943,7 @@ function ArrayType(type, mode) {
 //# sourceMappingURL=paramType.js.map
 
 /***/ }),
-/* 29 */
+/* 30 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -4948,8 +4955,8 @@ Object.defineProperty(exports, "__esModule", { value: true });
  */
 /** for typedoc */
 var interface_1 = __webpack_require__(9);
-var transition_1 = __webpack_require__(18);
-var hookRegistry_1 = __webpack_require__(26);
+var transition_1 = __webpack_require__(19);
+var hookRegistry_1 = __webpack_require__(27);
 var coreResolvables_1 = __webpack_require__(80);
 var redirectTo_1 = __webpack_require__(81);
 var onEnterExitRetain_1 = __webpack_require__(82);
@@ -5181,7 +5188,7 @@ exports.TransitionService = TransitionService;
 //# sourceMappingURL=transitionService.js.map
 
 /***/ }),
-/* 30 */
+/* 31 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -5201,7 +5208,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 /** for typedoc */
 var angular_1 = __webpack_require__(11);
 var core_1 = __webpack_require__(4);
-var views_1 = __webpack_require__(31);
+var views_1 = __webpack_require__(32);
 var templateFactory_1 = __webpack_require__(96);
 var stateProvider_1 = __webpack_require__(59);
 var onEnterExitRetain_1 = __webpack_require__(97);
@@ -5303,7 +5310,7 @@ exports.getLocals = function (ctx) {
 //# sourceMappingURL=services.js.map
 
 /***/ }),
-/* 31 */
+/* 32 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -5418,14 +5425,14 @@ exports.Ng1ViewConfig = Ng1ViewConfig;
 //# sourceMappingURL=views.js.map
 
 /***/ }),
-/* 32 */
+/* 33 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 /* WEBPACK VAR INJECTION */(function(process) {
 
 var utils = __webpack_require__(5);
-var normalizeHeaderName = __webpack_require__(109);
+var normalizeHeaderName = __webpack_require__(114);
 
 var DEFAULT_CONTENT_TYPE = {
   'Content-Type': 'application/x-www-form-urlencoded'
@@ -5515,14 +5522,7 @@ utils.forEach(['post', 'put', 'patch'], function forEachMethodWithData(method) {
 
 module.exports = defaults;
 
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(108)))
-
-/***/ }),
-/* 33 */
-/***/ (function(module, exports) {
-
-
-angular.module("app.require", []);
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(113)))
 
 /***/ }),
 /* 34 */
@@ -5686,7 +5686,7 @@ var common_1 = __webpack_require__(0);
 var predicates_1 = __webpack_require__(1);
 var hof_1 = __webpack_require__(2);
 var coreservices_1 = __webpack_require__(3);
-var paramType_1 = __webpack_require__(28);
+var paramType_1 = __webpack_require__(29);
 /**
  * A registry for parameter types.
  *
@@ -6242,7 +6242,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 /** @module state */ /** for typedoc */
 var common_1 = __webpack_require__(0);
 var predicates_1 = __webpack_require__(1);
-var stateObject_1 = __webpack_require__(24);
+var stateObject_1 = __webpack_require__(25);
 var hof_1 = __webpack_require__(2);
 /** @internalapi */
 var StateQueueManager = (function () {
@@ -6506,16 +6506,16 @@ Object.defineProperty(exports, "__esModule", { value: true });
 /** */
 var common_1 = __webpack_require__(0);
 var predicates_1 = __webpack_require__(1);
-var queue_1 = __webpack_require__(25);
+var queue_1 = __webpack_require__(26);
 var coreservices_1 = __webpack_require__(3);
-var pathFactory_1 = __webpack_require__(19);
-var pathNode_1 = __webpack_require__(27);
-var transitionService_1 = __webpack_require__(29);
+var pathFactory_1 = __webpack_require__(20);
+var pathNode_1 = __webpack_require__(28);
+var transitionService_1 = __webpack_require__(30);
 var rejectFactory_1 = __webpack_require__(12);
 var targetState_1 = __webpack_require__(8);
 var param_1 = __webpack_require__(10);
-var glob_1 = __webpack_require__(17);
-var resolveContext_1 = __webpack_require__(20);
+var glob_1 = __webpack_require__(18);
+var resolveContext_1 = __webpack_require__(21);
 var lazyLoad_1 = __webpack_require__(50);
 var hof_1 = __webpack_require__(2);
 /**
@@ -7084,7 +7084,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
  */ /** */
 var urlMatcherFactory_1 = __webpack_require__(44);
 var urlRouter_1 = __webpack_require__(45);
-var transitionService_1 = __webpack_require__(29);
+var transitionService_1 = __webpack_require__(30);
 var view_1 = __webpack_require__(47);
 var stateRegistry_1 = __webpack_require__(41);
 var stateService_1 = __webpack_require__(42);
@@ -7274,7 +7274,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
  */ /** for typedoc */
 var common_1 = __webpack_require__(0);
 var predicates_1 = __webpack_require__(1);
-var urlMatcher_1 = __webpack_require__(21);
+var urlMatcher_1 = __webpack_require__(22);
 var param_1 = __webpack_require__(10);
 var paramTypes_1 = __webpack_require__(36);
 /**
@@ -7408,7 +7408,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 /** for typedoc */
 var common_1 = __webpack_require__(0);
 var predicates_1 = __webpack_require__(1);
-var urlMatcher_1 = __webpack_require__(21);
+var urlMatcher_1 = __webpack_require__(22);
 var hof_1 = __webpack_require__(2);
 var urlRule_1 = __webpack_require__(46);
 var targetState_1 = __webpack_require__(8);
@@ -7684,7 +7684,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
  * @coreapi
  * @module url
  */ /** */
-var urlMatcher_1 = __webpack_require__(21);
+var urlMatcher_1 = __webpack_require__(22);
 var predicates_1 = __webpack_require__(1);
 var common_1 = __webpack_require__(0);
 var hof_1 = __webpack_require__(2);
@@ -8189,7 +8189,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
  * @module core
  */ /** */
 var stateParams_1 = __webpack_require__(37);
-var queue_1 = __webpack_require__(25);
+var queue_1 = __webpack_require__(26);
 /**
  * Global router state
  *
@@ -8456,7 +8456,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
  * @module vanilla
  */
 /** */
-var index_1 = __webpack_require__(16);
+var index_1 = __webpack_require__(17);
 /**
  * An angular1-like promise api
  *
@@ -8517,7 +8517,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
  * @module vanilla
  */
 /** */
-var index_1 = __webpack_require__(16);
+var index_1 = __webpack_require__(17);
 // globally available injectables
 var globals = {};
 var STRIP_COMMENTS = /((\/\/.*$)|(\/\*[\s\S]*?\*\/))/mg;
@@ -8634,7 +8634,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
  */
 /** */
 var utils_1 = __webpack_require__(15);
-var baseLocationService_1 = __webpack_require__(22);
+var baseLocationService_1 = __webpack_require__(23);
 /** A `LocationServices` that uses the browser hash "#" to get/set the current location */
 var HashLocationService = (function (_super) {
     __extends(HashLocationService, _super);
@@ -8680,7 +8680,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
  * @module vanilla
  */
 /** */
-var baseLocationService_1 = __webpack_require__(22);
+var baseLocationService_1 = __webpack_require__(23);
 /** A `LocationServices` that gets/sets the current location from an in-memory object */
 var MemoryLocationService = (function (_super) {
     __extends(MemoryLocationService, _super);
@@ -8716,7 +8716,7 @@ var __extends = (this && this.__extends) || (function () {
 })();
 Object.defineProperty(exports, "__esModule", { value: true });
 var utils_1 = __webpack_require__(15);
-var baseLocationService_1 = __webpack_require__(22);
+var baseLocationService_1 = __webpack_require__(23);
 /**
  * A `LocationServices` that gets/sets the current location using the browser's `location` and `history` apis
  *
@@ -9224,12 +9224,12 @@ module.exports = function bind(fn, thisArg) {
 
 
 var utils = __webpack_require__(5);
-var settle = __webpack_require__(110);
-var buildURL = __webpack_require__(112);
-var parseHeaders = __webpack_require__(113);
-var isURLSameOrigin = __webpack_require__(114);
+var settle = __webpack_require__(115);
+var buildURL = __webpack_require__(117);
+var parseHeaders = __webpack_require__(118);
+var isURLSameOrigin = __webpack_require__(119);
 var createError = __webpack_require__(63);
-var btoa = (typeof window !== 'undefined' && window.btoa && window.btoa.bind(window)) || __webpack_require__(115);
+var btoa = (typeof window !== 'undefined' && window.btoa && window.btoa.bind(window)) || __webpack_require__(120);
 
 module.exports = function xhrAdapter(config) {
   return new Promise(function dispatchXhrRequest(resolve, reject) {
@@ -9326,7 +9326,7 @@ module.exports = function xhrAdapter(config) {
     // This is only done if running in a standard browser environment.
     // Specifically not if we're in a web worker, or react-native.
     if (utils.isStandardBrowserEnv()) {
-      var cookies = __webpack_require__(116);
+      var cookies = __webpack_require__(121);
 
       // Add xsrf header
       var xsrfValue = (config.withCredentials || isURLSameOrigin(config.url)) && config.xsrfCookieName ?
@@ -9410,7 +9410,7 @@ module.exports = function xhrAdapter(config) {
 "use strict";
 
 
-var enhanceError = __webpack_require__(111);
+var enhanceError = __webpack_require__(116);
 
 /**
  * Create an Error with the specified message, config, error code, request and response.
@@ -9471,7 +9471,7 @@ module.exports = Cancel;
 /***/ (function(module, exports, __webpack_require__) {
 
 __webpack_require__(67);
-module.exports = __webpack_require__(128);
+module.exports = __webpack_require__(135);
 
 
 /***/ }),
@@ -9480,11 +9480,12 @@ module.exports = __webpack_require__(128);
 
 
 __webpack_require__(68);
-__webpack_require__(33);
-__webpack_require__(124);
-__webpack_require__(126);
+__webpack_require__(24);
+__webpack_require__(129);
+__webpack_require__(131);
+__webpack_require__(133);
 
-angular.module("app", ["app.require", "ui.router"]).config(function ($stateProvider, $urlRouterProvider) {
+angular.module("app", ["app.require", "ui.router", "schemaForm"]).config(function ($stateProvider, $urlRouterProvider) {
     $urlRouterProvider.otherwise("/");
     $stateProvider.state("home", { url: "/", template: "<page-home/>" });
 });
@@ -9508,8 +9509,10 @@ try {
   __webpack_require__(73);
 } catch (e) {}
 
-window.angular = __webpack_require__(23);
+window.angular = __webpack_require__(16);
 __webpack_require__(75);
+__webpack_require__(104);
+__webpack_require__(108);
 
 /**
  * We'll load the axios HTTP library which allows us to easily issue requests
@@ -9517,7 +9520,7 @@ __webpack_require__(75);
  * CSRF token as a header based on the value of the "XSRF" token cookie.
  */
 
-window.axios = __webpack_require__(104);
+window.axios = __webpack_require__(109);
 
 window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
 
@@ -73251,8 +73254,8 @@ Object.defineProperty(exports, "__esModule", { value: true });
 var core = __webpack_require__(4);
 exports.core = core;
 __export(__webpack_require__(4));
-__export(__webpack_require__(30));
 __export(__webpack_require__(31));
+__export(__webpack_require__(32));
 __export(__webpack_require__(59));
 __export(__webpack_require__(60));
 __webpack_require__(99);
@@ -73276,7 +73279,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 __export(__webpack_require__(10));
 __export(__webpack_require__(36));
 __export(__webpack_require__(37));
-__export(__webpack_require__(28));
+__export(__webpack_require__(29));
 //# sourceMappingURL=index.js.map
 
 /***/ }),
@@ -73290,8 +73293,8 @@ function __export(m) {
 }
 Object.defineProperty(exports, "__esModule", { value: true });
 /** @module path */ /** for typedoc */
-__export(__webpack_require__(27));
-__export(__webpack_require__(19));
+__export(__webpack_require__(28));
+__export(__webpack_require__(20));
 //# sourceMappingURL=index.js.map
 
 /***/ }),
@@ -73307,7 +73310,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 /** @module resolve */ /** for typedoc */
 __export(__webpack_require__(35));
 __export(__webpack_require__(14));
-__export(__webpack_require__(20));
+__export(__webpack_require__(21));
 //# sourceMappingURL=index.js.map
 
 /***/ }),
@@ -73321,7 +73324,7 @@ function __export(m) {
 }
 Object.defineProperty(exports, "__esModule", { value: true });
 __export(__webpack_require__(38));
-__export(__webpack_require__(24));
+__export(__webpack_require__(25));
 __export(__webpack_require__(39));
 __export(__webpack_require__(40));
 __export(__webpack_require__(41));
@@ -73337,7 +73340,7 @@ __export(__webpack_require__(8));
 
 Object.defineProperty(exports, "__esModule", { value: true });
 /** @module hooks */ /** */
-var transition_1 = __webpack_require__(18);
+var transition_1 = __webpack_require__(19);
 var router_1 = __webpack_require__(43);
 function addCoreResolvables(trans) {
     trans.addResolvable({ token: router_1.UIRouter, deps: [], resolveFn: function () { return trans.router; }, data: trans.router }, "");
@@ -73469,7 +73472,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 /** @module hooks */
 /** for typedoc */
 var common_1 = __webpack_require__(0);
-var resolveContext_1 = __webpack_require__(20);
+var resolveContext_1 = __webpack_require__(21);
 var hof_1 = __webpack_require__(2);
 /**
  * A [[TransitionHookFn]] which resolves all EAGER Resolvables in the To Path
@@ -73721,12 +73724,12 @@ Object.defineProperty(exports, "__esModule", { value: true });
  */ /** for typedoc */
 __export(__webpack_require__(9));
 __export(__webpack_require__(34));
-__export(__webpack_require__(26));
+__export(__webpack_require__(27));
 __export(__webpack_require__(12));
-__export(__webpack_require__(18));
+__export(__webpack_require__(19));
 __export(__webpack_require__(13));
 __export(__webpack_require__(51));
-__export(__webpack_require__(29));
+__export(__webpack_require__(30));
 //# sourceMappingURL=index.js.map
 
 /***/ }),
@@ -73739,7 +73742,7 @@ function __export(m) {
     for (var p in m) if (!exports.hasOwnProperty(p)) exports[p] = m[p];
 }
 Object.defineProperty(exports, "__esModule", { value: true });
-__export(__webpack_require__(21));
+__export(__webpack_require__(22));
 __export(__webpack_require__(44));
 __export(__webpack_require__(45));
 __export(__webpack_require__(46));
@@ -73789,7 +73792,7 @@ function __export(m) {
 Object.defineProperty(exports, "__esModule", { value: true });
 __export(__webpack_require__(52));
 __export(__webpack_require__(53));
-__export(__webpack_require__(22));
+__export(__webpack_require__(23));
 __export(__webpack_require__(54));
 __export(__webpack_require__(55));
 __export(__webpack_require__(56));
@@ -74070,7 +74073,7 @@ var scopeBindings = function (bindingsObj) { return Object.keys(bindingsObj || {
 Object.defineProperty(exports, "__esModule", { value: true });
 /** @module ng1 */ /** */
 var core_1 = __webpack_require__(4);
-var services_1 = __webpack_require__(30);
+var services_1 = __webpack_require__(31);
 /**
  * This is a [[StateBuilder.builder]] function for angular1 `onEnter`, `onExit`,
  * `onRetain` callback hooks on a [[Ng1StateDeclaration]].
@@ -75188,10 +75191,10 @@ Object.defineProperty(exports, "__esModule", { value: true });
  * @module directives
  */ /** for typedoc */
 var angular_1 = __webpack_require__(11);
-var angular_2 = __webpack_require__(23);
+var angular_2 = __webpack_require__(16);
 var core_1 = __webpack_require__(4);
-var views_1 = __webpack_require__(31);
-var services_1 = __webpack_require__(30);
+var views_1 = __webpack_require__(32);
+var services_1 = __webpack_require__(31);
 exports.uiView = ['$view', '$animate', '$uiViewScroll', '$interpolate', '$q',
     function $ViewDirective($view, $animate, $uiViewScroll, $interpolate, $q) {
         function getRenderer(attrs, scope) {
@@ -75505,10 +75508,1609 @@ angular_1.ng.module('ui.router.state').provider('$uiViewScroll', $ViewScrollProv
 /* 104 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(105);
+var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;!function(e,t){ true?!(__WEBPACK_AMD_DEFINE_ARRAY__ = [__webpack_require__(16),__webpack_require__(105),__webpack_require__(107)], __WEBPACK_AMD_DEFINE_FACTORY__ = (t),
+				__WEBPACK_AMD_DEFINE_RESULT__ = (typeof __WEBPACK_AMD_DEFINE_FACTORY__ === 'function' ?
+				(__WEBPACK_AMD_DEFINE_FACTORY__.apply(exports, __WEBPACK_AMD_DEFINE_ARRAY__)) : __WEBPACK_AMD_DEFINE_FACTORY__),
+				__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__)):"object"==typeof exports?module.exports=t(require("angular"),require("objectpath"),require("tv4")):e.schemaForm=t(e.angular,e.objectpath,e.tv4)}(this,function(e,t,r){var n=[];try{e.module("ngSanitize"),n.push("ngSanitize")}catch(i){}try{e.module("ui.sortable"),n.push("ui.sortable")}catch(i){}try{e.module("angularSpectrumColorpicker"),n.push("angularSpectrumColorpicker")}catch(i){}var o=e.module("schemaForm",n);return e.module("schemaForm").provider("sfPath",[function(){var r=window.ObjectPath||t,n={parse:r.parse};1===e.version.major&&e.version.minor<3?n.stringify=function(e){return Array.isArray(e)?e.join("."):e.toString()}:n.stringify=r.stringify,n.normalize=function(e,t){return n.stringify(Array.isArray(e)?e:n.parse(e),t)},this.parse=n.parse,this.stringify=n.stringify,this.normalize=n.normalize,this.$get=function(){return n}}]),e.module("schemaForm").provider("sfBuilder",["sfPathProvider",function(t){var r=/[A-Z]/g,n=function(e,t){return t=t||"_",e.replace(r,function(e,r){return(r?t:"")+e.toLowerCase()})},i=0,o={sfField:function(e){e.fieldFrag.firstChild.setAttribute("sf-field",i),e.lookup["f"+i]=e.form,i++},ngModel:function(e){if(e.form.key){var r=e.form.key;e.state.keyRedaction&&(r=r.slice(e.state.keyRedaction));var n;if(e.state.modelValue)n=e.state.modelValue;else{var i=t.stringify(r).replace(/"/g,"&quot;");n=e.state.modelName||"model",i&&(n+=("["!==i[0]?".":"")+i)}for(var o=e.fieldFrag.querySelectorAll("[sf-field-model]"),a=0;a<o.length;a++){var l=o[a],s=l.getAttribute("sf-field-model");if(s&&""!==s)if("replaceAll"===s)for(var u=l.attributes,c=0;c<u.length;c++)u[c].value&&-1!==u[c].value.indexOf("$$value")&&(u[c].value=u[c].value.replace(/\$\$value\$\$/g,n));else{var f=l.getAttribute(s);f&&f.indexOf("$$value$$")?l.setAttribute(s,f.replace(/\$\$value\$\$/g,n)):l.setAttribute(s,n)}else l.setAttribute("ng-model",n)}}},simpleTransclusion:function(e){var t=e.build(e.form.items,e.path+".items",e.state);e.fieldFrag.firstChild.appendChild(t)},ngModelOptions:function(e){e.form.ngModelOptions&&Object.keys(e.form.ngModelOptions).length>0&&e.fieldFrag.firstChild.setAttribute("ng-model-options",JSON.stringify(e.form.ngModelOptions))},transclusion:function(e){var t=e.fieldFrag.querySelectorAll("[sf-field-transclude]");if(t.length)for(var r=0;r<t.length;r++){var n=t[r],i=n.getAttribute("sf-field-transclude")||"items",o=e.form[i];if(o){var a=e.build(o,e.path+"."+i,e.state);n.appendChild(a)}}},condition:function(e){if(e.form.condition){var r="evalExpr("+e.path+'.condition, { model: model, "arrayIndex": $index})';if(e.form.key){var n=t.stringify(e.form.key);r="evalExpr("+e.path+'.condition,{ model: model, "arrayIndex": $index, "modelValue": model'+("["===n[0]?"":".")+n+"})"}for(var i=e.fieldFrag.children||e.fieldFrag.childNodes,o=0;o<i.length;o++){var a=i[o],l=a.getAttribute("ng-if");a.setAttribute("ng-if",l?"("+l+") || ("+r+")":r)}}},array:function(r){var n=r.fieldFrag.querySelector("[schema-form-array-items]");if(n){if(state=e.copy(r.state),state.keyRedaction=state.keyRedaction||0,state.keyRedaction+=r.form.key.length+1,r.form.schema&&r.form.schema.items&&r.form.schema.items.type&&-1===r.form.schema.items.type.indexOf("object")&&-1===r.form.schema.items.type.indexOf("array")){t.stringify(r.form.key).replace(/"/g,"&quot;")+"[$index]";state.modelValue="modelArray[$index]"}else state.modelName="item";state.arrayCompatFlag=!0;var i=r.build(r.form.items,r.path+".items",state);n.appendChild(i)}}};this.builders=o;var a=[o.sfField,o.ngModel,o.ngModelOptions,o.condition];this.stdBuilders=a,this.$get=["$templateCache","schemaFormDecorators","sfPath",function(e,t,r){var i=function(e,t){if(e.key){var n=t[r.stringify(e.key)];if(n){for(;n.firstChild;)n.removeChild(n.firstChild);return n}}},l=function(e,t,r,o,a,s,u){s=s||{},u=u||Object.create(null),a=a||"schemaForm.form";var c=document.createDocumentFragment();return e.reduce(function(e,c,f){if(!c.type)return e;var d=t[c.type]||t["default"];if(d.replace){var m;s.arrayCompatFlag=!1;var p=document.createElement("div"),h=r(c,d)||r(c,t["default"]);for(p.innerHTML=h,m=document.createDocumentFragment();p.childNodes.length>0;)m.appendChild(p.childNodes[0]);var v={fieldFrag:m,form:c,lookup:u,state:s,path:a+"["+f+"]",build:function(e,n,i){return l(e,t,r,o,n,i,u)}},y=c.builder||d.builder;"function"==typeof y?y(v):y.forEach(function(e){e(v)}),(i(c,o)||e).appendChild(m)}else{var g=document.createElement(n(t.__name,"-"));s.arrayCompatFlag?g.setAttribute("form","copyWithIndex($index)"):g.setAttribute("form",a+"["+f+"]"),(i(c,o)||e).appendChild(g)}return e},c),c};return{build:function(t,r,n,i){return l(t,r,function(t,r){return"template"===t.type?t.template:e.get(r.template)},n,void 0,void 0,i)},builder:o,stdBuilders:a,internalBuild:l}}]}]),e.module("schemaForm").provider("schemaFormDecorators",["$compileProvider","sfPathProvider",function(t,r){var n="",i={},o=function(e,t){"sfDecorator"===e&&(e=n);var r=i[e];return r[t.type]?r[t.type].template:r["default"].template},a=function(n){t.directive(n,["$parse","$compile","$http","$templateCache","$interpolate","$q","sfErrorMessage","sfPath","sfSelect",function(t,i,a,l,s,u,c,f,d){return{restrict:"AE",replace:!1,transclude:!1,scope:!0,require:"?^sfSchema",link:function(t,m,p,h){t.$on("schemaFormPropagateNgModelController",function(e,r){e.stopPropagation(),e.preventDefault(),t.ngModel=r}),t.showTitle=function(){return t.form&&t.form.notitle!==!0&&t.form.title},t.listToCheckboxValues=function(t){var r={};return e.forEach(t,function(e){r[e]=!0}),r},t.checkboxValuesToList=function(t){var r=[];return e.forEach(t,function(e,t){e&&r.push(t)}),r},t.buttonClick=function(r,n){e.isFunction(n.onClick)?n.onClick(r,n):e.isString(n.onClick)&&(h?h.evalInParentScope(n.onClick,{$event:r,form:n}):t.$eval(n.onClick,{$event:r,form:n}))},t.evalExpr=function(e,r){return h?h.evalInParentScope(e,r):t.$eval(e,r)},t.evalInScope=function(e,r){return e?t.$eval(e,r):void 0},t.interp=function(e,t){return e&&s(e)(t)},t.hasSuccess=function(){return t.ngModel?t.ngModel.$valid&&(!t.ngModel.$pristine||!t.ngModel.$isEmpty(t.ngModel.$modelValue)):!1},t.hasError=function(){return t.ngModel?t.ngModel.$invalid&&!t.ngModel.$pristine:!1},t.errorMessage=function(e){return c.interpolate(e&&e.code+""||"default",t.ngModel&&t.ngModel.$modelValue||"",t.ngModel&&t.ngModel.$viewValue||"",t.form,t.options&&t.options.validationMessage)};var v=t.$watch(p.form,function(s){if(s){s.ngModelOptions=s.ngModelOptions||{},t.form=s;var c;if("template"===s.type&&s.template)c=u.when(s.template);else{var p="template"===s.type?s.templateUrl:o(n,s);c=a.get(p,{cache:l}).then(function(e){return e.data})}c.then(function(n){if(s.key){var o=s.key?r.stringify(s.key).replace(/"/g,"&quot;"):"";n=n.replace(/\$\$value\$\$/g,"model"+("["!==o[0]?".":"")+o)}if(m.html(n),s.condition){var a='evalExpr(form.condition,{ model: model, "arrayIndex": arrayIndex})';s.key&&(a='evalExpr(form.condition,{ model: model, "arrayIndex": arrayIndex, "modelValue": model'+f.stringify(s.key)+"})"),e.forEach(m.children(),function(e){var t=e.getAttribute("ng-if");e.setAttribute("ng-if",t?"("+t+") || ("+a+")":a)})}i(m.contents())(t)}),s.key&&(t.$on("schemaForm.error."+s.key.join("."),function(e,r,n,i){(n===!0||n===!1)&&(i=n,n=void 0),t.ngModel&&r&&(t.ngModel.$setDirty?t.ngModel.$setDirty():(t.ngModel.$dirty=!0,t.ngModel.$pristine=!1),n&&(s.validationMessage||(s.validationMessage={}),s.validationMessage[r]=n),t.ngModel.$setValidity(r,i===!0),i===!0&&(t.ngModel.$validate(),t.$broadcast("schemaFormValidate")))}),t.$on("$destroy",function(){if(!t.externalDestructionInProgress){var e=s.destroyStrategy||t.options&&t.options.destroyStrategy||"remove";if(s.key&&"retain"!==e){var r=t.model;if(s.key.length>1&&(r=d(s.key.slice(0,s.key.length-1),r)),void 0===r)return;var n=s.schema&&s.schema.type||"";"empty"===e&&-1!==n.indexOf("string")?r[s.key.slice(-1)]="":"empty"===e&&-1!==n.indexOf("object")?r[s.key.slice(-1)]={}:"empty"===e&&-1!==n.indexOf("array")?r[s.key.slice(-1)]=[]:"null"===e?r[s.key.slice(-1)]=null:delete r[s.key.slice(-1)]}}})),v()}})}}}])},l=function(r,n,i){i=e.isDefined(i)?i:!1,t.directive("sf"+e.uppercase(r[0])+r.substr(1),function(){return{restrict:"EAC",scope:!0,replace:!0,transclude:i,template:'<sf-decorator form="form"></sf-decorator>',link:function(t,n,i){var o={items:"c",titleMap:"c",schema:"c"},a={type:r},l=!0;e.forEach(i,function(r,n){if("$"!==n[0]&&0!==n.indexOf("ng")&&"sfField"!==n){var s=function(r){e.isDefined(r)&&r!==a[n]&&(a[n]=r,l&&a.type&&(a.key||e.isUndefined(i.key))&&(t.form=a,l=!1))};"model"===n?t.$watch(r,function(e){e&&t.model!==e&&(t.model=e)}):"c"===o[n]?t.$watchCollection(r,s):i.$observe(n,s)}})}}})};this.createDecorator=function(t,r){i[t]={__name:t},e.forEach(r,function(e,r){i[t][r]={template:e,replace:!1,builder:[]}}),i[n]||(n=t),a(t)},this.defineDecorator=function(t,r){i[t]={__name:t},e.forEach(r,function(r,n){r.builder=r.builder||[],r.replace=e.isDefined(r.replace)?r.replace:!0,i[t][n]=r}),i[n]||(n=t),a(t)},this.createDirective=l,this.createDirectives=function(t){e.forEach(t,function(e,t){l(t,e)})},this.decorator=function(e){return e=e||n,i[e]},this.addMapping=function(e,t,r,n,o){i[e]&&(i[e][t]={template:r,builder:n,replace:!!o})},this.defineAddOn=function(e,t,r,n){i[e]&&(i[e][t]={template:r,builder:n,replace:!0})},this.$get=function(){return{decorator:function(e){return i[e]||i[n]},defaultDecorator:n}},a("sfDecorator")}]),e.module("schemaForm").provider("sfErrorMessage",function(){var t={"default":"Field does not validate",0:"Invalid type, expected {{schema.type}}",1:"No enum match for: {{viewValue}}",10:'Data does not match any schemas from "anyOf"',11:'Data does not match any schemas from "oneOf"',12:'Data is valid against more than one schema from "oneOf"',13:'Data matches schema from "not"',100:"Value is not a multiple of {{schema.multipleOf}}",101:"{{viewValue}} is less than the allowed minimum of {{schema.minimum}}",102:"{{viewValue}} is equal to the exclusive minimum {{schema.minimum}}",103:"{{viewValue}} is greater than the allowed maximum of {{schema.maximum}}",104:"{{viewValue}} is equal to the exclusive maximum {{schema.maximum}}",105:"Value is not a valid number",200:"String is too short ({{viewValue.length}} chars), minimum {{schema.minLength}}",201:"String is too long ({{viewValue.length}} chars), maximum {{schema.maxLength}}",202:"String does not match pattern: {{schema.pattern}}",300:"Too few properties defined, minimum {{schema.minProperties}}",301:"Too many properties defined, maximum {{schema.maxProperties}}",302:"Required",303:"Additional properties not allowed",304:"Dependency failed - key must exist",400:"Array is too short ({{value.length}}), minimum {{schema.minItems}}",401:"Array is too long ({{value.length}}), maximum {{schema.maxItems}}",402:"Array items are not unique",403:"Additional items not allowed",500:"Format validation failed",501:'Keyword failed: "{{title}}"',600:"Circular $refs",1e3:"Unknown property (not in schema)"};t.number=t[105],t.required=t[302],t.min=t[101],t.max=t[103],t.maxlength=t[201],t.minlength=t[200],t.pattern=t[202],this.setDefaultMessages=function(e){t=e},this.getDefaultMessages=function(){return t},this.setDefaultMessage=function(e,r){t[e]=r},this.$get=["$interpolate",function(r){var n={};return n.defaultMessages=t,n.interpolate=function(n,i,o,a,l){l=l||{};var s=a.validationMessage||{};0===n.indexOf("tv4-")&&(n=n.substring(4));var u=s["default"]||l["default"]||"";[s,l,t].some(function(t){return e.isString(t)||e.isFunction(t)?(u=t,!0):t&&t[n]?(u=t[n],!0):void 0});var c={error:n,value:i,viewValue:o,form:a,schema:a.schema,title:a.title||a.schema&&a.schema.title};return e.isFunction(u)?u(c):r(u)(c)},n}]}),e.module("schemaForm").provider("schemaForm",["sfPathProvider",function(t){var r=function(e){if(Array.isArray(e)&&2==e.length){if("null"===e[0])return e[1];if("null"===e[1])return e[0]}return e},n=function(e){var t=[];return e.forEach(function(e){t.push({name:e,value:e})}),t},i=function(t,r){if(!e.isArray(t)){var n=[];return r?e.forEach(r,function(e,r){n.push({name:t[e],value:e})}):e.forEach(t,function(e,t){n.push({name:e,value:t})}),n}return t},o=function(t,n,i){var o=h[r(n.type)];if(o)for(var a,l=0;l<o.length;l++)if(a=o[l](t,n,i))return a.schema["x-schema-form"]&&e.isObject(a.schema["x-schema-form"])&&(a=e.extend(a,a.schema["x-schema-form"])),a},a=function(t,r,n){n=n||{};var o=n.global&&n.global.formDefaults?e.copy(n.global.formDefaults):{};return n.global&&n.global.supressPropertyTitles===!0?o.title=r.title:o.title=r.title||t,r.description&&(o.description=r.description),(n.required===!0||r.required===!0)&&(o.required=!0),r.maxLength&&(o.maxlength=r.maxLength),r.minLength&&(o.minlength=r.minLength),(r.readOnly||r.readonly)&&(o.readonly=!0),r.minimum&&(o.minimum=r.minimum+(r.exclusiveMinimum?1:0)),r.maximum&&(o.maximum=r.maximum-(r.exclusiveMaximum?1:0)),r.validationMessage&&(o.validationMessage=r.validationMessage),r.enumNames&&(o.titleMap=i(r.enumNames,r["enum"])),o.schema=r,o.ngModelOptions=o.ngModelOptions||{},o},l=function(e,n,i){if("string"===r(n.type)&&!n["enum"]){var o=a(e,n,i);return o.key=i.path,o.type="text",i.lookup[t.stringify(i.path)]=o,o}},s=function(e,n,i){if("number"===r(n.type)){var o=a(e,n,i);return o.key=i.path,o.type="number",i.lookup[t.stringify(i.path)]=o,o}},u=function(e,n,i){if("integer"===r(n.type)){var o=a(e,n,i);return o.key=i.path,o.type="number",i.lookup[t.stringify(i.path)]=o,o}},c=function(e,n,i){if("boolean"===r(n.type)){var o=a(e,n,i);return o.key=i.path,o.type="checkbox",i.lookup[t.stringify(i.path)]=o,o}},f=function(e,i,o){if("string"===r(i.type)&&i["enum"]){var l=a(e,i,o);return l.key=o.path,l.type="select",l.titleMap||(l.titleMap=n(i["enum"])),o.lookup[t.stringify(o.path)]=l,l}},d=function(e,i,o){if("array"===r(i.type)&&i.items&&i.items["enum"]){var l=a(e,i,o);return l.key=o.path,l.type="checkboxes",l.titleMap||(l.titleMap=n(i.items["enum"])),o.lookup[t.stringify(o.path)]=l,l}},m=function(n,i,l){if("object"===r(i.type)){var s=a(n,i,l);return s.type="fieldset",s.items=[],l.lookup[t.stringify(l.path)]=s,e.forEach(i.properties,function(e,r){var n=l.path.slice();if(n.push(r),l.ignore[t.stringify(n)]!==!0){var a=i.required&&-1!==i.required.indexOf(r),u=o(r,e,{path:n,required:a||!1,lookup:l.lookup,ignore:l.ignore,global:l.global});u&&s.items.push(u)}}),s}},p=function(e,n,i){if("array"===r(n.type)){var l=a(e,n,i);l.type="array",l.key=i.path,i.lookup[t.stringify(i.path)]=l;var s=n.required&&-1!==n.required.indexOf(i.path[i.path.length-1]),u=i.path.slice();return u.push(""),l.items=[o(e,n.items,{path:u,required:s||!1,lookup:i.lookup,ignore:i.ignore,global:i.global})],l}},h={string:[f,l],object:[m],number:[s],integer:[u],"boolean":[c],array:[d,p]},v=function(e){return e};this.defaults=h,this.stdFormObj=a,this.defaultFormDefinition=o,this.postProcess=function(e){v=e},this.appendRule=function(e,t){h[e]||(h[e]=[]),h[e].push(t)},this.prependRule=function(e,t){h[e]||(h[e]=[]),h[e].unshift(t)},this.createStandardForm=a,this.$get=function(){var n={};return n.merge=function(r,o,a,l,s,u){o=o||["*"],l=l||{},s=s||r.readonly||r.readOnly;var c=n.defaults(r,a,l),f=o.indexOf("*");-1!==f&&(o=o.slice(0,f).concat(c.form).concat(o.slice(f+1)));var d=c.lookup;return v(o.map(function(o){if("string"==typeof o&&(o={key:o}),o.key&&"string"==typeof o.key&&(o.key=t.parse(o.key)),o.titleMap&&(o.titleMap=i(o.titleMap)),o.itemForm){o.items=[];var c=t.stringify(o.key),f=d[c];e.forEach(f.items,function(t){var r=e.copy(o.itemForm);r.key=t.key,o.items.push(r)})}if(o.key){var m=t.stringify(o.key);if(d[m]){var p=d[m];e.forEach(p,function(e,t){void 0===o[t]&&(o[t]=p[t])})}}return s===!0&&(o.readonly=!0),o.items&&(o.items=n.merge(r,o.items,a,l,o.readonly,u)),o.tabs&&e.forEach(o.tabs,function(e){e.items=n.merge(r,e.items,a,l,o.readonly,u)}),"checkbox"===o.type&&e.isUndefined(o.schema["default"])&&(o.schema["default"]=!1),u&&"template"===o.type&&!o.template&&o.templateUrl&&u.push(o),o}))},n.defaults=function(t,n,i){var a=[],l={};if(n=n||{},i=i||{},"object"!==r(t.type))throw new Error('Not implemented. Only type "object" allowed at root level of schema.');return e.forEach(t.properties,function(e,r){if(n[r]!==!0){var s=t.required&&-1!==t.required.indexOf(r),u=o(r,e,{path:[r],lookup:l,ignore:n,required:s,global:i});u&&a.push(u)}}),{form:a,lookup:l}},n.traverseSchema=function(t,r,n,i){i=e.isDefined(i)?i:!0,n=n||[];var o=function(t,r,n){if(r(t,n),e.forEach(t.properties,function(e,t){var i=n.slice();i.push(t),o(e,r,i)}),!i&&t.items){var a=n.slice();a.push(""),o(t.items,r,a)}};o(t,r,n||[])},n.traverseForm=function(t,r){r(t),e.forEach(t.items,function(e){n.traverseForm(e,r)}),t.tabs&&e.forEach(t.tabs,function(t){e.forEach(t.items,function(e){n.traverseForm(e,r)})})},n}}]),e.module("schemaForm").factory("sfSelect",["sfPath",function(e){var t=/^\d+$/;return function(r,n,i){n||(n=this);var o="string"==typeof r?e.parse(r):r;if("undefined"!=typeof i&&1===o.length)return n[o[0]]=i,n;"undefined"!=typeof i&&"undefined"==typeof n[o[0]]&&(n[o[0]]=o.length>2&&t.test(o[1])?[]:{});for(var a=n[o[0]],l=1;l<o.length;l++){if(""===o[l])return void 0;if("undefined"!=typeof i){if(l===o.length-1)return a[o[l]]=i,i;var s=a[o[l]];("undefined"==typeof s||null===s)&&(s=t.test(o[l+1])?[]:{},a[o[l]]=s),a=s}else a&&(a=a[o[l]])}return a}}]),e.module("schemaForm").factory("sfValidator",[function(){var t={};return t.validate=function(t,n){if(!t)return{valid:!0};var i=t.schema;if(!i)return{valid:!0};""===n&&(n=void 0),"number"===t.type&&null===n&&(n=void 0);var o={type:"object",properties:{}},a=t.key[t.key.length-1];o.properties[a]=i,t.required&&(o.required=[a]);var l={};return e.isDefined(n)&&(l[a]=n),r.validateResult(l,o)},t}]),e.module("schemaForm").directive("sfArray",["sfSelect","schemaForm","sfValidator","sfPath",function(t,r,n,i){var o=function(e){return function(t){t.key&&(t.key[t.key.indexOf("")]=e)}};return{restrict:"A",scope:!0,require:"?ngModel",link:function(a,l,s,u){var c={};a.validateArray=e.noop,u&&a.$emit("schemaFormPropagateNgModelController",u);var f=a.$watch(s.sfArray,function(l){if(l){var s=t(l.key,a.model),d=i.normalize(l.key);if(a.$watch("model"+("["!==d[0]?".":"")+d,function(e){s=a.modelArray=e}),e.isUndefined(s)&&(s=[],t(l.key,a.model,s)),a.modelArray=s,l.items){var m=l.items[0];l.items.length>1&&(m={type:"section",items:l.items.map(function(t){return t.ngModelOptions=l.ngModelOptions,e.isUndefined(t.readonly)&&(t.readonly=l.readonly),t})})}if(a.copyWithIndex=function(t){if(!c[t]&&m){var n=e.copy(m);n.arrayIndex=t,r.traverseForm(n,o(t)),c[t]=n}return c[t]},a.appendToArray=function(){var n=s.length,i=a.copyWithIndex(n);if(r.traverseForm(i,function(r){if(r.key){var n;e.isDefined(r["default"])&&(n=r["default"]),e.isDefined(r.schema)&&e.isDefined(r.schema["default"])&&(n=r.schema["default"]),e.isDefined(n)&&t(r.key,a.model,n)}}),n===s.length){var o,u=t("schema.items.type",l);"object"===u?o={}:"array"===u&&(o=[]),s.push(o)}return a.validateArray(),s},a.deleteFromArray=function(e){return s.splice(e,1),a.validateArray(),u&&u.$setDirty&&u.$setDirty(),s},l.titleMap||l.startEmpty===!0||0!==s.length||a.appendToArray(),l.titleMap&&l.titleMap.length>0){a.titleMapValues=[];var p=function(e){a.titleMapValues=[],e=e||[],l.titleMap.forEach(function(t){a.titleMapValues.push(-1!==e.indexOf(t.value))})};p(a.modelArray),a.$watchCollection("modelArray",p),a.$watchCollection("titleMapValues",function(e,t){if(e&&e!==t){for(var r=a.modelArray;r.length>0;)r.pop();l.titleMap.forEach(function(t,n){e[n]&&r.push(t.value)}),a.validateArray()}})}if(u){var h;a.validateArray=function(){var e=n.validate(l,a.modelArray.length>0?a.modelArray:void 0);Object.keys(u.$error).filter(function(e){return 0===e.indexOf("tv4-")}).forEach(function(e){u.$setValidity(e,!0)}),e.valid!==!1||!e.error||""!==e.error.dataPath&&e.error.dataPath!=="/"+l.key[l.key.length-1]||(u.$setViewValue(a.modelArray),h=e.error,u.$setValidity("tv4-"+e.error.code,!1))},a.$on("schemaFormValidate",a.validateArray),a.hasSuccess=function(){return a.options&&a.options.pristine&&a.options.pristine.success===!1?u.$valid&&!u.$pristine&&!u.$isEmpty(u.$modelValue):u.$valid&&(!u.$pristine||!u.$isEmpty(u.$modelValue))},a.hasError=function(){return a.options&&a.options.pristine&&a.options.pristine.errors===!1?u.$invalid&&!u.$pristine:u.$invalid},a.schemaError=function(){return h}}f()}})}}}]),e.module("schemaForm").directive("sfChanged",function(){return{require:"ngModel",restrict:"AC",scope:!1,link:function(t,r,n,i){var o=t.$eval(n.sfChanged);o&&o.onChange&&i.$viewChangeListeners.push(function(){e.isFunction(o.onChange)?o.onChange(i.$modelValue,o):t.evalExpr(o.onChange,{modelValue:i.$modelValue,form:o})})}}}),e.module("schemaForm").directive("sfField",["$parse","$compile","$http","$templateCache","$interpolate","$q","sfErrorMessage","sfPath","sfSelect",function(t,r,n,i,o,a,l,s,u){return{restrict:"AE",replace:!1,transclude:!1,scope:!0,require:"^sfSchema",link:{pre:function(e,t,r,n){e.$on("schemaFormPropagateNgModelController",function(t,r){t.stopPropagation(),t.preventDefault(),e.ngModel=r}),e.form=n.lookup["f"+r.sfField]},post:function(t,r,n,i){t.showTitle=function(){return t.form&&t.form.notitle!==!0&&t.form.title},t.listToCheckboxValues=function(t){var r={};return e.forEach(t,function(e){r[e]=!0}),r},t.checkboxValuesToList=function(t){var r=[];return e.forEach(t,function(e,t){e&&r.push(t)}),r},t.buttonClick=function(r,n){e.isFunction(n.onClick)?n.onClick(r,n):e.isString(n.onClick)&&(i?i.evalInParentScope(n.onClick,{$event:r,form:n}):t.$eval(n.onClick,{$event:r,form:n}))},t.evalExpr=function(e,r){return i?i.evalInParentScope(e,r):t.$eval(e,r)},t.evalInScope=function(e,r){return e?t.$eval(e,r):void 0},t.interp=function(e,t){return e&&o(e)(t)},t.hasSuccess=function(){return t.ngModel?t.options&&t.options.pristine&&t.options.pristine.success===!1?t.ngModel.$valid&&!t.ngModel.$pristine&&!t.ngModel.$isEmpty(t.ngModel.$modelValue):t.ngModel.$valid&&(!t.ngModel.$pristine||!t.ngModel.$isEmpty(t.ngModel.$modelValue)):!1},t.hasError=function(){return t.ngModel?t.options&&t.options.pristine&&t.options.pristine.errors===!1?t.ngModel.$invalid&&!t.ngModel.$pristine:t.ngModel.$invalid:!1},t.errorMessage=function(e){return l.interpolate(e&&e.code+""||"default",t.ngModel&&t.ngModel.$modelValue||"",t.ngModel&&t.ngModel.$viewValue||"",t.form,t.options&&t.options.validationMessage)};var a=t.form;a.key&&(t.$on("schemaForm.error."+a.key.join("."),function(e,r,n,i){(n===!0||n===!1)&&(i=n,n=void 0),t.ngModel&&r&&(t.ngModel.$setDirty?t.ngModel.$setDirty():(t.ngModel.$dirty=!0,t.ngModel.$pristine=!1),n&&(a.validationMessage||(a.validationMessage={}),a.validationMessage[r]=n),t.ngModel.$setValidity(r,i===!0),i===!0&&(t.ngModel.$validate(),t.$broadcast("schemaFormValidate")))}),t.$on("$destroy",function(){if(!t.externalDestructionInProgress){var e=a.destroyStrategy||t.options&&t.options.destroyStrategy||"remove";if(a.key&&"retain"!==e){var r=t.model;if(a.key.length>1&&(r=u(a.key.slice(0,a.key.length-1),r)),void 0===r)return;var n=a.schema&&a.schema.type||"";"empty"===e&&-1!==n.indexOf("string")?r[a.key.slice(-1)]="":"empty"===e&&-1!==n.indexOf("object")?r[a.key.slice(-1)]={}:"empty"===e&&-1!==n.indexOf("array")?r[a.key.slice(-1)]=[]:"null"===e?r[a.key.slice(-1)]=null:delete r[a.key.slice(-1)]}}}))}}}}]),e.module("schemaForm").directive("sfMessage",["$injector","sfErrorMessage",function(t,r){var n=t.has("$sanitize")?t.get("$sanitize"):function(e){return e};return{scope:!1,restrict:"EA",link:function(t,i,o){var a="";o.sfMessage&&t.$watch(o.sfMessage,function(e){e&&(a=n(e),u(!!t.ngModel))});var l,s=function(e){e!==l&&(i.html(e),l=e)},u=function(n){if(n)if(t.hasError()){var i=[];e.forEach(t.ngModel&&t.ngModel.$error,function(e,t){e&&i.push(t)}),i=i.filter(function(e){return"schemaForm"!==e});var o=i[0];s(o?r.interpolate(o,t.ngModel.$modelValue,t.ngModel.$viewValue,t.form,t.options&&t.options.validationMessage):a)}else s(a);else s(a)};u();var c=t.$watch("ngModel",function(e){e&&(e.$parsers.push(function(e){return u(!0),e}),e.$formatters.push(function(e){return u(!0),e}),c())});t.$watchCollection("ngModel.$error",function(){u(!!t.ngModel)})}}}]),e.module("schemaForm").directive("sfNewArray",["sfSelect","sfPath","schemaForm",function(t,r,n){return{scope:!1,link:function(i,o,a){i.min=0,i.modelArray=i.$eval(a.sfNewArray);var l=function(){i.modelArray=i.$eval(a.sfNewArray),(!(i.ngModel&&i.ngModel.$pristine&&i.firstDigest)||i.options&&i.options.validateOnRender===!0)&&i.validateField&&i.validateField()},s=function(){i.form&&i.form.onChange&&(e.isFunction(i.form.onChange)?i.form.onChange(i.modelArray,i.form):i.evalExpr(i.form.onChange,{modelValue:i.modelArray,form:i.form}))},u=function(){var e=i.modelArray;if(!e){var n=r.parse(a.sfNewArray);e=[],t(n,i,e),i.modelArray=e}return e},c=i.$watch("form",function(e){if(e){if(e.titleMap||e.startEmpty===!0||i.modelArray&&0!==i.modelArray.length||i.appendToArray(),i.form&&i.form.schema&&i.form.schema.uniqueItems===!0?(i.$watch(a.sfNewArray,l,!0),i.$watch([a.sfNewArray,a.sfNewArray+".length"],s)):i.$watchGroup?i.$watchGroup([a.sfNewArray,a.sfNewArray+".length"],function(){l(),s()}):(i.$watch(a.sfNewArray,function(){l(),s()}),i.$watch(a.sfNewArray+".length",function(){l(),s()})),e.titleMap&&e.titleMap.length>0){i.titleMapValues=[];var t=function(t){i.titleMapValues=[],t=t||[],e.titleMap.forEach(function(e){i.titleMapValues.push(-1!==t.indexOf(e.value))})};t(i.modelArray),i.$watchCollection("modelArray",t),i.$watchCollection("titleMapValues",function(t,r){if(t&&t!==r){for(var n=u();n.length>0;)n.pop();e.titleMap.forEach(function(e,r){t[r]&&n.push(e.value)}),i.validateField&&i.validateField()}})}c()}});i.appendToArray=function(){var r,o=u();if(i.form&&i.form.schema&&i.form.schema.items){var a=i.form.schema.items;a.type&&-1!==a.type.indexOf("object")?(r={},i.options&&i.options.setSchemaDefaults===!1||(r=e.isDefined(a["default"])?a["default"]:r,r&&n.traverseSchema(a,function(n,i){e.isDefined(n["default"])&&t(i,r,n["default"])}))):a.type&&-1!==a.type.indexOf("array")?(r=[],i.options&&i.options.setSchemaDefaults===!1||(r=a["default"]||r)):i.options&&i.options.setSchemaDefaults===!1||(r=a["default"]||r)}return o.push(r),o},i.deleteFromArray=function(e){var t=i.modelArray;return t&&t.splice(e,1),t};var f=function(e){return function(t){t.key&&(t.key[t.key.indexOf("")]=e)}},d={};i.copyWithIndex=function(t){var r=i.form;if(!d[t]){var o=r.items[0];if(r.items.length>1&&(o={type:"section",items:r.items.map(function(t){return t.ngModelOptions=r.ngModelOptions,e.isUndefined(t.readonly)&&(t.readonly=r.readonly),t})}),o){var a=e.copy(o);a.arrayIndex=t,n.traverseForm(a,f(t)),d[t]=a}}return d[t]}}}}]),e.module("schemaForm").directive("sfSchema",["$compile","$http","$templateCache","$q","schemaForm","schemaFormDecorators","sfSelect","sfPath","sfBuilder",function(t,r,n,i,o,a,l,s,u){return{scope:{schema:"=sfSchema",initialForm:"=sfForm",model:"=sfModel",options:"=sfOptions"},controller:["$scope",function(e){this.evalInParentScope=function(t,r){return e.$parent.$eval(t,r)};var t=this;e.lookup=function(e){return e&&(t.lookup=e),t.lookup}}],replace:!1,restrict:"A",transclude:!0,require:"?form",link:function(s,c,f,d,m){s.formCtrl=d;var p={};m(s,function(e){if(e.addClass("schema-form-ignore"),c.prepend(e),c[0].querySelectorAll){var t=c[0].querySelectorAll("[ng-model]");if(t)for(var r=0;r<t.length;r++){var n=t[r].getAttribute("ng-model");p[n.substring(n.indexOf(".")+1)]=!0}}});var h,v={},y=function(e,t){var a=[],l=o.merge(e,t,p,s.options,void 0,a);a.length>0?i.all(a.map(function(e){return r.get(e.templateUrl,{cache:n}).then(function(t){e.template=t.data})})).then(function(){g(e,t,l)}):g(e,t,l)},g=function(r,n,i){h&&(s.externalDestructionInProgress=!0,h.$destroy(),s.externalDestructionInProgress=!1),h=s.$new(),h.schemaForm={form:i,schema:r},c.children(":not(.schema-form-ignore)").remove();for(var d={},m=c[0].querySelectorAll("*[sf-insert-field]"),p=0;p<m.length;p++)d[m[p].getAttribute("sf-insert-field")]=m[p];var v=a.decorator(f.sfUseDecorator),y=Object.create(null);s.lookup(y),c[0].appendChild(u.build(i,v,d,y)),h.firstDigest=!0,setTimeout(function(){h.firstDigest=!1},0),t(c.children())(h),s.options&&s.options.setSchemaDefaults===!1||o.traverseSchema(r,function(t,r){if(e.isDefined(t["default"])){var n=l(r,s.model);e.isUndefined(n)&&l(r,s.model,t["default"])}}),s.$emit("sf-render-finished",c)},$=["*"];s.$watch(function(){var e=s.schema,t=s.initialForm||$;t&&e&&e.type&&(v.form!==t||v.schema!==e)&&Object.keys(e.properties).length>0&&(v.schema=e,v.form=t,y(e,t))}),s.$on("schemaFormRedraw",function(){var t=s.schema,r=s.initialForm?e.copy(s.initialForm):["*"];t&&y(t,r)}),s.$on("$destroy",function(){s.externalDestructionInProgress=!0}),s.evalExpr=function(e,t){return s.$parent.$eval(e,t)}}}}]),e.module("schemaForm").directive("schemaValidate",["sfValidator","$parse","sfSelect",function(t,r,n){return{restrict:"A",scope:!1,priority:500,require:"ngModel",link:function(r,i,o,a){r.$emit("schemaFormPropagateNgModelController",a);var l=null,s=r.$eval(o.schemaValidate);s.copyValueTo&&a.$viewChangeListeners.push(function(){var t=s.copyValueTo;e.forEach(t,function(e){n(e,r.model,a.$modelValue)})});var u=function(e){if(!s)return e;if(r.options&&r.options.tv4Validation===!1)return e;var n=t.validate(s,e);return Object.keys(a.$error).filter(function(e){return 0===e.indexOf("tv4-")}).forEach(function(e){a.$setValidity(e,!0)}),n.valid?e:(a.$setValidity("tv4-"+n.error.code,!1),l=n.error,a.$validators?e:void 0)};"function"==typeof s.ngModel&&s.ngModel(a),["$parsers","$viewChangeListeners","$formatters"].forEach(function(e){s[e]&&a[e]&&s[e].forEach(function(t){a[e].push(t)})}),["$validators","$asyncValidators"].forEach(function(t){s[t]&&a[t]&&e.forEach(s[t],function(e,r){a[t][r]=e})}),a.$parsers.push(u),a.$validators&&(a.$validators.schemaForm=function(){return!Object.keys(a.$error).some(function(e){return"schemaForm"!==e})});var c=s.schema;r.validateField=function(e){(void 0==e||a.$$parentForm.$name===e)&&(c&&-1!==c.type.indexOf("array")&&u(a.$modelValue),a.$setDirty?(a.$setDirty(),a.$setViewValue(a.$viewValue),a.$commitViewValue(),s.required&&a.$isEmpty(a.$modelValue)&&a.$setValidity("tv4-302",!1)):a.$setViewValue(a.$viewValue))},a.$formatters.push(function(e){return!a.$pristine||!r.firstDigest||r.options&&r.options.validateOnRender===!0?(u(a.$modelValue),e):e}),r.$on("schemaFormValidate",function(e,t){r.validateField(t)}),r.schemaError=function(){return l}}}}]),o});
 
 /***/ }),
 /* 105 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__(106).ObjectPath;
+
+
+/***/ }),
+/* 106 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+var __WEBPACK_AMD_DEFINE_RESULT__;
+
+;!function(undefined) {
+
+	var ObjectPath = {
+		parse: function(str){
+			if(typeof str !== 'string'){
+				throw new TypeError('ObjectPath.parse must be passed a string');
+			}
+
+			var i = 0;
+			var parts = [];
+			var d, b, q, c;
+			while (i < str.length){
+				d = str.indexOf('.', i);
+				b = str.indexOf('[', i);
+
+				// we've reached the end
+				if (d === -1 && b === -1){
+					parts.push(str.slice(i, str.length));
+					i = str.length;
+				}
+
+				// dots
+				else if (b === -1 || (d !== -1 && d < b)) {
+					parts.push(str.slice(i, d));
+					i = d + 1;
+				}
+
+				// brackets
+				else {
+					if (b > i){
+						parts.push(str.slice(i, b));
+						i = b;
+					}
+					q = str.slice(b+1, b+2);
+					if (q !== '"' && q !=='\'') {
+						c = str.indexOf(']', b);
+						if (c === -1) c = str.length;
+						parts.push(str.slice(i + 1, c));
+						i = (str.slice(c + 1, c + 2) === '.') ? c + 2 : c + 1;
+					} else {
+						c = str.indexOf(q+']', b);
+						if (c === -1) c = str.length;
+						while (str.slice(c - 1, c) === '\\' && b < str.length){
+							b++;
+							c = str.indexOf(q+']', b);
+						}
+						parts.push(str.slice(i + 2, c).replace(new RegExp('\\'+q,'g'), q));
+						i = (str.slice(c + 2, c + 3) === '.') ? c + 3 : c + 2;
+					}
+				}
+			}
+			return parts;
+		},
+
+		// root === true : auto calculate root; must be dot-notation friendly
+		// root String : the string to use as root
+		stringify: function(arr, quote){
+
+			if(!Array.isArray(arr))
+				arr = [arr.toString()];
+
+			quote = quote === '"' ? '"' : '\'';
+
+			return arr.map(function(n){ return '[' + quote + (n.toString()).replace(new RegExp(quote, 'g'), '\\' + quote) + quote + ']'; }).join('');
+		},
+
+		normalize: function(data, quote){
+			return ObjectPath.stringify(Array.isArray(data) ? data : ObjectPath.parse(data), quote);
+		},
+
+		// Angular
+		registerModule: function(angular) {
+			angular.module('ObjectPath', []).provider('ObjectPath', function(){
+				this.parse = ObjectPath.parse;
+				this.stringify = ObjectPath.stringify;
+				this.normalize = ObjectPath.normalize;
+				this.$get = function(){
+					return ObjectPath;
+				};
+			});
+		}
+	};
+
+	// AMD
+	if (true) {
+		!(__WEBPACK_AMD_DEFINE_RESULT__ = function() {
+			return {ObjectPath: ObjectPath};
+		}.call(exports, __webpack_require__, exports, module),
+				__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));
+	}
+
+	// CommonJS
+	else if (typeof exports === 'object') {
+		exports.ObjectPath = ObjectPath;
+	}
+
+	// Browser global
+	else {
+		window.ObjectPath = ObjectPath;
+	}
+	
+}();
+
+/***/ }),
+/* 107 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/*
+Author: Geraint Luff and others
+Year: 2013
+
+This code is released into the "public domain" by its author(s).  Anybody may use, alter and distribute the code without restriction.  The author makes no guarantees, and takes no liability of any kind for use of this code.
+
+If you find a bug or make an improvement, it would be courteous to let the author know, but it is not compulsory.
+*/
+(function (global, factory) {
+  if (true) {
+    // AMD. Register as an anonymous module.
+    !(__WEBPACK_AMD_DEFINE_ARRAY__ = [], __WEBPACK_AMD_DEFINE_FACTORY__ = (factory),
+				__WEBPACK_AMD_DEFINE_RESULT__ = (typeof __WEBPACK_AMD_DEFINE_FACTORY__ === 'function' ?
+				(__WEBPACK_AMD_DEFINE_FACTORY__.apply(exports, __WEBPACK_AMD_DEFINE_ARRAY__)) : __WEBPACK_AMD_DEFINE_FACTORY__),
+				__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));
+  } else if (typeof module !== 'undefined' && module.exports){
+    // CommonJS. Define export.
+    module.exports = factory();
+  } else {
+    // Browser globals
+    global.tv4 = factory();
+  }
+}(this, function () {
+
+// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/keys?redirectlocale=en-US&redirectslug=JavaScript%2FReference%2FGlobal_Objects%2FObject%2Fkeys
+if (!Object.keys) {
+	Object.keys = (function () {
+		var hasOwnProperty = Object.prototype.hasOwnProperty,
+			hasDontEnumBug = !({toString: null}).propertyIsEnumerable('toString'),
+			dontEnums = [
+				'toString',
+				'toLocaleString',
+				'valueOf',
+				'hasOwnProperty',
+				'isPrototypeOf',
+				'propertyIsEnumerable',
+				'constructor'
+			],
+			dontEnumsLength = dontEnums.length;
+
+		return function (obj) {
+			if (typeof obj !== 'object' && typeof obj !== 'function' || obj === null) {
+				throw new TypeError('Object.keys called on non-object');
+			}
+
+			var result = [];
+
+			for (var prop in obj) {
+				if (hasOwnProperty.call(obj, prop)) {
+					result.push(prop);
+				}
+			}
+
+			if (hasDontEnumBug) {
+				for (var i=0; i < dontEnumsLength; i++) {
+					if (hasOwnProperty.call(obj, dontEnums[i])) {
+						result.push(dontEnums[i]);
+					}
+				}
+			}
+			return result;
+		};
+	})();
+}
+// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/create
+if (!Object.create) {
+	Object.create = (function(){
+		function F(){}
+
+		return function(o){
+			if (arguments.length !== 1) {
+				throw new Error('Object.create implementation only accepts one parameter.');
+			}
+			F.prototype = o;
+			return new F();
+		};
+	})();
+}
+// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/isArray?redirectlocale=en-US&redirectslug=JavaScript%2FReference%2FGlobal_Objects%2FArray%2FisArray
+if(!Array.isArray) {
+	Array.isArray = function (vArg) {
+		return Object.prototype.toString.call(vArg) === "[object Array]";
+	};
+}
+// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/indexOf?redirectlocale=en-US&redirectslug=JavaScript%2FReference%2FGlobal_Objects%2FArray%2FindexOf
+if (!Array.prototype.indexOf) {
+	Array.prototype.indexOf = function (searchElement /*, fromIndex */ ) {
+		if (this === null) {
+			throw new TypeError();
+		}
+		var t = Object(this);
+		var len = t.length >>> 0;
+
+		if (len === 0) {
+			return -1;
+		}
+		var n = 0;
+		if (arguments.length > 1) {
+			n = Number(arguments[1]);
+			if (n !== n) { // shortcut for verifying if it's NaN
+				n = 0;
+			} else if (n !== 0 && n !== Infinity && n !== -Infinity) {
+				n = (n > 0 || -1) * Math.floor(Math.abs(n));
+			}
+		}
+		if (n >= len) {
+			return -1;
+		}
+		var k = n >= 0 ? n : Math.max(len - Math.abs(n), 0);
+		for (; k < len; k++) {
+			if (k in t && t[k] === searchElement) {
+				return k;
+			}
+		}
+		return -1;
+	};
+}
+
+// Grungey Object.isFrozen hack
+if (!Object.isFrozen) {
+	Object.isFrozen = function (obj) {
+		var key = "tv4_test_frozen_key";
+		while (obj.hasOwnProperty(key)) {
+			key += Math.random();
+		}
+		try {
+			obj[key] = true;
+			delete obj[key];
+			return false;
+		} catch (e) {
+			return true;
+		}
+	};
+}
+var ValidatorContext = function ValidatorContext(parent, collectMultiple, errorMessages, checkRecursive, trackUnknownProperties) {
+	this.missing = [];
+	this.missingMap = {};
+	this.formatValidators = parent ? Object.create(parent.formatValidators) : {};
+	this.schemas = parent ? Object.create(parent.schemas) : {};
+	this.collectMultiple = collectMultiple;
+	this.errors = [];
+	this.handleError = collectMultiple ? this.collectError : this.returnError;
+	if (checkRecursive) {
+		this.checkRecursive = true;
+		this.scanned = [];
+		this.scannedFrozen = [];
+		this.scannedFrozenSchemas = [];
+		this.scannedFrozenValidationErrors = [];
+		this.validatedSchemasKey = 'tv4_validation_id';
+		this.validationErrorsKey = 'tv4_validation_errors_id';
+	}
+	if (trackUnknownProperties) {
+		this.trackUnknownProperties = true;
+		this.knownPropertyPaths = {};
+		this.unknownPropertyPaths = {};
+	}
+	this.errorMessages = errorMessages;
+	this.definedKeywords = {};
+	if (parent) {
+		for (var key in parent.definedKeywords) {
+			this.definedKeywords[key] = parent.definedKeywords[key].slice(0);
+		}
+	}
+};
+ValidatorContext.prototype.defineKeyword = function (keyword, keywordFunction) {
+	this.definedKeywords[keyword] = this.definedKeywords[keyword] || [];
+	this.definedKeywords[keyword].push(keywordFunction);
+};
+ValidatorContext.prototype.createError = function (code, messageParams, dataPath, schemaPath, subErrors) {
+	var messageTemplate = this.errorMessages[code] || ErrorMessagesDefault[code];
+	if (typeof messageTemplate !== 'string') {
+		return new ValidationError(code, "Unknown error code " + code + ": " + JSON.stringify(messageParams), dataPath, schemaPath, subErrors);
+	}
+	// Adapted from Crockford's supplant()
+	var message = messageTemplate.replace(/\{([^{}]*)\}/g, function (whole, varName) {
+		var subValue = messageParams[varName];
+		return typeof subValue === 'string' || typeof subValue === 'number' ? subValue : whole;
+	});
+	return new ValidationError(code, message, dataPath, schemaPath, subErrors);
+};
+ValidatorContext.prototype.returnError = function (error) {
+	return error;
+};
+ValidatorContext.prototype.collectError = function (error) {
+	if (error) {
+		this.errors.push(error);
+	}
+	return null;
+};
+ValidatorContext.prototype.prefixErrors = function (startIndex, dataPath, schemaPath) {
+	for (var i = startIndex; i < this.errors.length; i++) {
+		this.errors[i] = this.errors[i].prefixWith(dataPath, schemaPath);
+	}
+	return this;
+};
+ValidatorContext.prototype.banUnknownProperties = function () {
+	for (var unknownPath in this.unknownPropertyPaths) {
+		var error = this.createError(ErrorCodes.UNKNOWN_PROPERTY, {path: unknownPath}, unknownPath, "");
+		var result = this.handleError(error);
+		if (result) {
+			return result;
+		}
+	}
+	return null;
+};
+
+ValidatorContext.prototype.addFormat = function (format, validator) {
+	if (typeof format === 'object') {
+		for (var key in format) {
+			this.addFormat(key, format[key]);
+		}
+		return this;
+	}
+	this.formatValidators[format] = validator;
+};
+ValidatorContext.prototype.resolveRefs = function (schema, urlHistory) {
+	if (schema['$ref'] !== undefined) {
+		urlHistory = urlHistory || {};
+		if (urlHistory[schema['$ref']]) {
+			return this.createError(ErrorCodes.CIRCULAR_REFERENCE, {urls: Object.keys(urlHistory).join(', ')}, '', '');
+		}
+		urlHistory[schema['$ref']] = true;
+		schema = this.getSchema(schema['$ref'], urlHistory);
+	}
+	return schema;
+};
+ValidatorContext.prototype.getSchema = function (url, urlHistory) {
+	var schema;
+	if (this.schemas[url] !== undefined) {
+		schema = this.schemas[url];
+		return this.resolveRefs(schema, urlHistory);
+	}
+	var baseUrl = url;
+	var fragment = "";
+	if (url.indexOf('#') !== -1) {
+		fragment = url.substring(url.indexOf("#") + 1);
+		baseUrl = url.substring(0, url.indexOf("#"));
+	}
+	if (typeof this.schemas[baseUrl] === 'object') {
+		schema = this.schemas[baseUrl];
+		var pointerPath = decodeURIComponent(fragment);
+		if (pointerPath === "") {
+			return this.resolveRefs(schema, urlHistory);
+		} else if (pointerPath.charAt(0) !== "/") {
+			return undefined;
+		}
+		var parts = pointerPath.split("/").slice(1);
+		for (var i = 0; i < parts.length; i++) {
+			var component = parts[i].replace(/~1/g, "/").replace(/~0/g, "~");
+			if (schema[component] === undefined) {
+				schema = undefined;
+				break;
+			}
+			schema = schema[component];
+		}
+		if (schema !== undefined) {
+			return this.resolveRefs(schema, urlHistory);
+		}
+	}
+	if (this.missing[baseUrl] === undefined) {
+		this.missing.push(baseUrl);
+		this.missing[baseUrl] = baseUrl;
+		this.missingMap[baseUrl] = baseUrl;
+	}
+};
+ValidatorContext.prototype.searchSchemas = function (schema, url) {
+	if (schema && typeof schema === "object") {
+		if (typeof schema.id === "string") {
+			if (isTrustedUrl(url, schema.id)) {
+				if (this.schemas[schema.id] === undefined) {
+					this.schemas[schema.id] = schema;
+				}
+			}
+		}
+		for (var key in schema) {
+			if (key !== "enum") {
+				if (typeof schema[key] === "object") {
+					this.searchSchemas(schema[key], url);
+				} else if (key === "$ref") {
+					var uri = getDocumentUri(schema[key]);
+					if (uri && this.schemas[uri] === undefined && this.missingMap[uri] === undefined) {
+						this.missingMap[uri] = uri;
+					}
+				}
+			}
+		}
+	}
+};
+ValidatorContext.prototype.addSchema = function (url, schema) {
+	//overload
+	if (typeof url !== 'string' || typeof schema === 'undefined') {
+		if (typeof url === 'object' && typeof url.id === 'string') {
+			schema = url;
+			url = schema.id;
+		}
+		else {
+			return;
+		}
+	}
+	if (url = getDocumentUri(url) + "#") {
+		// Remove empty fragment
+		url = getDocumentUri(url);
+	}
+	this.schemas[url] = schema;
+	delete this.missingMap[url];
+	normSchema(schema, url);
+	this.searchSchemas(schema, url);
+};
+
+ValidatorContext.prototype.getSchemaMap = function () {
+	var map = {};
+	for (var key in this.schemas) {
+		map[key] = this.schemas[key];
+	}
+	return map;
+};
+
+ValidatorContext.prototype.getSchemaUris = function (filterRegExp) {
+	var list = [];
+	for (var key in this.schemas) {
+		if (!filterRegExp || filterRegExp.test(key)) {
+			list.push(key);
+		}
+	}
+	return list;
+};
+
+ValidatorContext.prototype.getMissingUris = function (filterRegExp) {
+	var list = [];
+	for (var key in this.missingMap) {
+		if (!filterRegExp || filterRegExp.test(key)) {
+			list.push(key);
+		}
+	}
+	return list;
+};
+
+ValidatorContext.prototype.dropSchemas = function () {
+	this.schemas = {};
+	this.reset();
+};
+ValidatorContext.prototype.reset = function () {
+	this.missing = [];
+	this.missingMap = {};
+	this.errors = [];
+};
+
+ValidatorContext.prototype.validateAll = function (data, schema, dataPathParts, schemaPathParts, dataPointerPath) {
+	var topLevel;
+	schema = this.resolveRefs(schema);
+	if (!schema) {
+		return null;
+	} else if (schema instanceof ValidationError) {
+		this.errors.push(schema);
+		return schema;
+	}
+
+	var startErrorCount = this.errors.length;
+	var frozenIndex, scannedFrozenSchemaIndex = null, scannedSchemasIndex = null;
+	if (this.checkRecursive && data && typeof data === 'object') {
+		topLevel = !this.scanned.length;
+		if (data[this.validatedSchemasKey]) {
+			var schemaIndex = data[this.validatedSchemasKey].indexOf(schema);
+			if (schemaIndex !== -1) {
+				this.errors = this.errors.concat(data[this.validationErrorsKey][schemaIndex]);
+				return null;
+			}
+		}
+		if (Object.isFrozen(data)) {
+			frozenIndex = this.scannedFrozen.indexOf(data);
+			if (frozenIndex !== -1) {
+				var frozenSchemaIndex = this.scannedFrozenSchemas[frozenIndex].indexOf(schema);
+				if (frozenSchemaIndex !== -1) {
+					this.errors = this.errors.concat(this.scannedFrozenValidationErrors[frozenIndex][frozenSchemaIndex]);
+					return null;
+				}
+			}
+		}
+		this.scanned.push(data);
+		if (Object.isFrozen(data)) {
+			if (frozenIndex === -1) {
+				frozenIndex = this.scannedFrozen.length;
+				this.scannedFrozen.push(data);
+				this.scannedFrozenSchemas.push([]);
+			}
+			scannedFrozenSchemaIndex = this.scannedFrozenSchemas[frozenIndex].length;
+			this.scannedFrozenSchemas[frozenIndex][scannedFrozenSchemaIndex] = schema;
+			this.scannedFrozenValidationErrors[frozenIndex][scannedFrozenSchemaIndex] = [];
+		} else {
+			if (!data[this.validatedSchemasKey]) {
+				try {
+					Object.defineProperty(data, this.validatedSchemasKey, {
+						value: [],
+						configurable: true
+					});
+					Object.defineProperty(data, this.validationErrorsKey, {
+						value: [],
+						configurable: true
+					});
+				} catch (e) {
+					//IE 7/8 workaround
+					data[this.validatedSchemasKey] = [];
+					data[this.validationErrorsKey] = [];
+				}
+			}
+			scannedSchemasIndex = data[this.validatedSchemasKey].length;
+			data[this.validatedSchemasKey][scannedSchemasIndex] = schema;
+			data[this.validationErrorsKey][scannedSchemasIndex] = [];
+		}
+	}
+
+	var errorCount = this.errors.length;
+	var error = this.validateBasic(data, schema, dataPointerPath)
+		|| this.validateNumeric(data, schema, dataPointerPath)
+		|| this.validateString(data, schema, dataPointerPath)
+		|| this.validateArray(data, schema, dataPointerPath)
+		|| this.validateObject(data, schema, dataPointerPath)
+		|| this.validateCombinations(data, schema, dataPointerPath)
+		|| this.validateFormat(data, schema, dataPointerPath)
+		|| this.validateDefinedKeywords(data, schema, dataPointerPath)
+		|| null;
+
+	if (topLevel) {
+		while (this.scanned.length) {
+			var item = this.scanned.pop();
+			delete item[this.validatedSchemasKey];
+		}
+		this.scannedFrozen = [];
+		this.scannedFrozenSchemas = [];
+	}
+
+	if (error || errorCount !== this.errors.length) {
+		while ((dataPathParts && dataPathParts.length) || (schemaPathParts && schemaPathParts.length)) {
+			var dataPart = (dataPathParts && dataPathParts.length) ? "" + dataPathParts.pop() : null;
+			var schemaPart = (schemaPathParts && schemaPathParts.length) ? "" + schemaPathParts.pop() : null;
+			if (error) {
+				error = error.prefixWith(dataPart, schemaPart);
+			}
+			this.prefixErrors(errorCount, dataPart, schemaPart);
+		}
+	}
+	
+	if (scannedFrozenSchemaIndex !== null) {
+		this.scannedFrozenValidationErrors[frozenIndex][scannedFrozenSchemaIndex] = this.errors.slice(startErrorCount);
+	} else if (scannedSchemasIndex !== null) {
+		data[this.validationErrorsKey][scannedSchemasIndex] = this.errors.slice(startErrorCount);
+	}
+
+	return this.handleError(error);
+};
+ValidatorContext.prototype.validateFormat = function (data, schema) {
+	if (typeof schema.format !== 'string' || !this.formatValidators[schema.format]) {
+		return null;
+	}
+	var errorMessage = this.formatValidators[schema.format].call(null, data, schema);
+	if (typeof errorMessage === 'string' || typeof errorMessage === 'number') {
+		return this.createError(ErrorCodes.FORMAT_CUSTOM, {message: errorMessage}).prefixWith(null, "format");
+	} else if (errorMessage && typeof errorMessage === 'object') {
+		return this.createError(ErrorCodes.FORMAT_CUSTOM, {message: errorMessage.message || "?"}, errorMessage.dataPath || null, errorMessage.schemaPath || "/format");
+	}
+	return null;
+};
+ValidatorContext.prototype.validateDefinedKeywords = function (data, schema) {
+	for (var key in this.definedKeywords) {
+		if (typeof schema[key] === 'undefined') {
+			continue;
+		}
+		var validationFunctions = this.definedKeywords[key];
+		for (var i = 0; i < validationFunctions.length; i++) {
+			var func = validationFunctions[i];
+			var result = func(data, schema[key], schema);
+			if (typeof result === 'string' || typeof result === 'number') {
+				return this.createError(ErrorCodes.KEYWORD_CUSTOM, {key: key, message: result}).prefixWith(null, "format");
+			} else if (result && typeof result === 'object') {
+				var code = result.code || ErrorCodes.KEYWORD_CUSTOM;
+				if (typeof code === 'string') {
+					if (!ErrorCodes[code]) {
+						throw new Error('Undefined error code (use defineError): ' + code);
+					}
+					code = ErrorCodes[code];
+				}
+				var messageParams = (typeof result.message === 'object') ? result.message : {key: key, message: result.message || "?"};
+				var schemaPath = result.schemaPath ||( "/" + key.replace(/~/g, '~0').replace(/\//g, '~1'));
+				return this.createError(code, messageParams, result.dataPath || null, schemaPath);
+			}
+		}
+	}
+	return null;
+};
+
+function recursiveCompare(A, B) {
+	if (A === B) {
+		return true;
+	}
+	if (typeof A === "object" && typeof B === "object") {
+		if (Array.isArray(A) !== Array.isArray(B)) {
+			return false;
+		} else if (Array.isArray(A)) {
+			if (A.length !== B.length) {
+				return false;
+			}
+			for (var i = 0; i < A.length; i++) {
+				if (!recursiveCompare(A[i], B[i])) {
+					return false;
+				}
+			}
+		} else {
+			var key;
+			for (key in A) {
+				if (B[key] === undefined && A[key] !== undefined) {
+					return false;
+				}
+			}
+			for (key in B) {
+				if (A[key] === undefined && B[key] !== undefined) {
+					return false;
+				}
+			}
+			for (key in A) {
+				if (!recursiveCompare(A[key], B[key])) {
+					return false;
+				}
+			}
+		}
+		return true;
+	}
+	return false;
+}
+
+ValidatorContext.prototype.validateBasic = function validateBasic(data, schema, dataPointerPath) {
+	var error;
+	if (error = this.validateType(data, schema, dataPointerPath)) {
+		return error.prefixWith(null, "type");
+	}
+	if (error = this.validateEnum(data, schema, dataPointerPath)) {
+		return error.prefixWith(null, "type");
+	}
+	return null;
+};
+
+ValidatorContext.prototype.validateType = function validateType(data, schema) {
+	if (schema.type === undefined) {
+		return null;
+	}
+	var dataType = typeof data;
+	if (data === null) {
+		dataType = "null";
+	} else if (Array.isArray(data)) {
+		dataType = "array";
+	}
+	var allowedTypes = schema.type;
+	if (typeof allowedTypes !== "object") {
+		allowedTypes = [allowedTypes];
+	}
+
+	for (var i = 0; i < allowedTypes.length; i++) {
+		var type = allowedTypes[i];
+		if (type === dataType || (type === "integer" && dataType === "number" && (data % 1 === 0))) {
+			return null;
+		}
+	}
+	return this.createError(ErrorCodes.INVALID_TYPE, {type: dataType, expected: allowedTypes.join("/")});
+};
+
+ValidatorContext.prototype.validateEnum = function validateEnum(data, schema) {
+	if (schema["enum"] === undefined) {
+		return null;
+	}
+	for (var i = 0; i < schema["enum"].length; i++) {
+		var enumVal = schema["enum"][i];
+		if (recursiveCompare(data, enumVal)) {
+			return null;
+		}
+	}
+	return this.createError(ErrorCodes.ENUM_MISMATCH, {value: (typeof JSON !== 'undefined') ? JSON.stringify(data) : data});
+};
+
+ValidatorContext.prototype.validateNumeric = function validateNumeric(data, schema, dataPointerPath) {
+	return this.validateMultipleOf(data, schema, dataPointerPath)
+		|| this.validateMinMax(data, schema, dataPointerPath)
+		|| null;
+};
+
+ValidatorContext.prototype.validateMultipleOf = function validateMultipleOf(data, schema) {
+	var multipleOf = schema.multipleOf || schema.divisibleBy;
+	if (multipleOf === undefined) {
+		return null;
+	}
+	if (typeof data === "number") {
+		if (data % multipleOf !== 0) {
+			return this.createError(ErrorCodes.NUMBER_MULTIPLE_OF, {value: data, multipleOf: multipleOf});
+		}
+	}
+	return null;
+};
+
+ValidatorContext.prototype.validateMinMax = function validateMinMax(data, schema) {
+	if (typeof data !== "number") {
+		return null;
+	}
+	if (schema.minimum !== undefined) {
+		if (data < schema.minimum) {
+			return this.createError(ErrorCodes.NUMBER_MINIMUM, {value: data, minimum: schema.minimum}).prefixWith(null, "minimum");
+		}
+		if (schema.exclusiveMinimum && data === schema.minimum) {
+			return this.createError(ErrorCodes.NUMBER_MINIMUM_EXCLUSIVE, {value: data, minimum: schema.minimum}).prefixWith(null, "exclusiveMinimum");
+		}
+	}
+	if (schema.maximum !== undefined) {
+		if (data > schema.maximum) {
+			return this.createError(ErrorCodes.NUMBER_MAXIMUM, {value: data, maximum: schema.maximum}).prefixWith(null, "maximum");
+		}
+		if (schema.exclusiveMaximum && data === schema.maximum) {
+			return this.createError(ErrorCodes.NUMBER_MAXIMUM_EXCLUSIVE, {value: data, maximum: schema.maximum}).prefixWith(null, "exclusiveMaximum");
+		}
+	}
+	return null;
+};
+
+ValidatorContext.prototype.validateString = function validateString(data, schema, dataPointerPath) {
+	return this.validateStringLength(data, schema, dataPointerPath)
+		|| this.validateStringPattern(data, schema, dataPointerPath)
+		|| null;
+};
+
+ValidatorContext.prototype.validateStringLength = function validateStringLength(data, schema) {
+	if (typeof data !== "string") {
+		return null;
+	}
+	if (schema.minLength !== undefined) {
+		if (data.length < schema.minLength) {
+			return this.createError(ErrorCodes.STRING_LENGTH_SHORT, {length: data.length, minimum: schema.minLength}).prefixWith(null, "minLength");
+		}
+	}
+	if (schema.maxLength !== undefined) {
+		if (data.length > schema.maxLength) {
+			return this.createError(ErrorCodes.STRING_LENGTH_LONG, {length: data.length, maximum: schema.maxLength}).prefixWith(null, "maxLength");
+		}
+	}
+	return null;
+};
+
+ValidatorContext.prototype.validateStringPattern = function validateStringPattern(data, schema) {
+	if (typeof data !== "string" || schema.pattern === undefined) {
+		return null;
+	}
+	var regexp = new RegExp(schema.pattern);
+	if (!regexp.test(data)) {
+		return this.createError(ErrorCodes.STRING_PATTERN, {pattern: schema.pattern}).prefixWith(null, "pattern");
+	}
+	return null;
+};
+ValidatorContext.prototype.validateArray = function validateArray(data, schema, dataPointerPath) {
+	if (!Array.isArray(data)) {
+		return null;
+	}
+	return this.validateArrayLength(data, schema, dataPointerPath)
+		|| this.validateArrayUniqueItems(data, schema, dataPointerPath)
+		|| this.validateArrayItems(data, schema, dataPointerPath)
+		|| null;
+};
+
+ValidatorContext.prototype.validateArrayLength = function validateArrayLength(data, schema) {
+	var error;
+	if (schema.minItems !== undefined) {
+		if (data.length < schema.minItems) {
+			error = (this.createError(ErrorCodes.ARRAY_LENGTH_SHORT, {length: data.length, minimum: schema.minItems})).prefixWith(null, "minItems");
+			if (this.handleError(error)) {
+				return error;
+			}
+		}
+	}
+	if (schema.maxItems !== undefined) {
+		if (data.length > schema.maxItems) {
+			error = (this.createError(ErrorCodes.ARRAY_LENGTH_LONG, {length: data.length, maximum: schema.maxItems})).prefixWith(null, "maxItems");
+			if (this.handleError(error)) {
+				return error;
+			}
+		}
+	}
+	return null;
+};
+
+ValidatorContext.prototype.validateArrayUniqueItems = function validateArrayUniqueItems(data, schema) {
+	if (schema.uniqueItems) {
+		for (var i = 0; i < data.length; i++) {
+			for (var j = i + 1; j < data.length; j++) {
+				if (recursiveCompare(data[i], data[j])) {
+					var error = (this.createError(ErrorCodes.ARRAY_UNIQUE, {match1: i, match2: j})).prefixWith(null, "uniqueItems");
+					if (this.handleError(error)) {
+						return error;
+					}
+				}
+			}
+		}
+	}
+	return null;
+};
+
+ValidatorContext.prototype.validateArrayItems = function validateArrayItems(data, schema, dataPointerPath) {
+	if (schema.items === undefined) {
+		return null;
+	}
+	var error, i;
+	if (Array.isArray(schema.items)) {
+		for (i = 0; i < data.length; i++) {
+			if (i < schema.items.length) {
+				if (error = this.validateAll(data[i], schema.items[i], [i], ["items", i], dataPointerPath + "/" + i)) {
+					return error;
+				}
+			} else if (schema.additionalItems !== undefined) {
+				if (typeof schema.additionalItems === "boolean") {
+					if (!schema.additionalItems) {
+						error = (this.createError(ErrorCodes.ARRAY_ADDITIONAL_ITEMS, {})).prefixWith("" + i, "additionalItems");
+						if (this.handleError(error)) {
+							return error;
+						}
+					}
+				} else if (error = this.validateAll(data[i], schema.additionalItems, [i], ["additionalItems"], dataPointerPath + "/" + i)) {
+					return error;
+				}
+			}
+		}
+	} else {
+		for (i = 0; i < data.length; i++) {
+			if (error = this.validateAll(data[i], schema.items, [i], ["items"], dataPointerPath + "/" + i)) {
+				return error;
+			}
+		}
+	}
+	return null;
+};
+
+ValidatorContext.prototype.validateObject = function validateObject(data, schema, dataPointerPath) {
+	if (typeof data !== "object" || data === null || Array.isArray(data)) {
+		return null;
+	}
+	return this.validateObjectMinMaxProperties(data, schema, dataPointerPath)
+		|| this.validateObjectRequiredProperties(data, schema, dataPointerPath)
+		|| this.validateObjectProperties(data, schema, dataPointerPath)
+		|| this.validateObjectDependencies(data, schema, dataPointerPath)
+		|| null;
+};
+
+ValidatorContext.prototype.validateObjectMinMaxProperties = function validateObjectMinMaxProperties(data, schema) {
+	var keys = Object.keys(data);
+	var error;
+	if (schema.minProperties !== undefined) {
+		if (keys.length < schema.minProperties) {
+			error = this.createError(ErrorCodes.OBJECT_PROPERTIES_MINIMUM, {propertyCount: keys.length, minimum: schema.minProperties}).prefixWith(null, "minProperties");
+			if (this.handleError(error)) {
+				return error;
+			}
+		}
+	}
+	if (schema.maxProperties !== undefined) {
+		if (keys.length > schema.maxProperties) {
+			error = this.createError(ErrorCodes.OBJECT_PROPERTIES_MAXIMUM, {propertyCount: keys.length, maximum: schema.maxProperties}).prefixWith(null, "maxProperties");
+			if (this.handleError(error)) {
+				return error;
+			}
+		}
+	}
+	return null;
+};
+
+ValidatorContext.prototype.validateObjectRequiredProperties = function validateObjectRequiredProperties(data, schema) {
+	if (schema.required !== undefined) {
+		for (var i = 0; i < schema.required.length; i++) {
+			var key = schema.required[i];
+			if (data[key] === undefined) {
+				var error = this.createError(ErrorCodes.OBJECT_REQUIRED, {key: key}).prefixWith(null, "" + i).prefixWith(null, "required");
+				if (this.handleError(error)) {
+					return error;
+				}
+			}
+		}
+	}
+	return null;
+};
+
+ValidatorContext.prototype.validateObjectProperties = function validateObjectProperties(data, schema, dataPointerPath) {
+	var error;
+	for (var key in data) {
+		var keyPointerPath = dataPointerPath + "/" + key.replace(/~/g, '~0').replace(/\//g, '~1');
+		var foundMatch = false;
+		if (schema.properties !== undefined && schema.properties[key] !== undefined) {
+			foundMatch = true;
+			if (error = this.validateAll(data[key], schema.properties[key], [key], ["properties", key], keyPointerPath)) {
+				return error;
+			}
+		}
+		if (schema.patternProperties !== undefined) {
+			for (var patternKey in schema.patternProperties) {
+				var regexp = new RegExp(patternKey);
+				if (regexp.test(key)) {
+					foundMatch = true;
+					if (error = this.validateAll(data[key], schema.patternProperties[patternKey], [key], ["patternProperties", patternKey], keyPointerPath)) {
+						return error;
+					}
+				}
+			}
+		}
+		if (!foundMatch) {
+			if (schema.additionalProperties !== undefined) {
+				if (this.trackUnknownProperties) {
+					this.knownPropertyPaths[keyPointerPath] = true;
+					delete this.unknownPropertyPaths[keyPointerPath];
+				}
+				if (typeof schema.additionalProperties === "boolean") {
+					if (!schema.additionalProperties) {
+						error = this.createError(ErrorCodes.OBJECT_ADDITIONAL_PROPERTIES, {}).prefixWith(key, "additionalProperties");
+						if (this.handleError(error)) {
+							return error;
+						}
+					}
+				} else {
+					if (error = this.validateAll(data[key], schema.additionalProperties, [key], ["additionalProperties"], keyPointerPath)) {
+						return error;
+					}
+				}
+			} else if (this.trackUnknownProperties && !this.knownPropertyPaths[keyPointerPath]) {
+				this.unknownPropertyPaths[keyPointerPath] = true;
+			}
+		} else if (this.trackUnknownProperties) {
+			this.knownPropertyPaths[keyPointerPath] = true;
+			delete this.unknownPropertyPaths[keyPointerPath];
+		}
+	}
+	return null;
+};
+
+ValidatorContext.prototype.validateObjectDependencies = function validateObjectDependencies(data, schema, dataPointerPath) {
+	var error;
+	if (schema.dependencies !== undefined) {
+		for (var depKey in schema.dependencies) {
+			if (data[depKey] !== undefined) {
+				var dep = schema.dependencies[depKey];
+				if (typeof dep === "string") {
+					if (data[dep] === undefined) {
+						error = this.createError(ErrorCodes.OBJECT_DEPENDENCY_KEY, {key: depKey, missing: dep}).prefixWith(null, depKey).prefixWith(null, "dependencies");
+						if (this.handleError(error)) {
+							return error;
+						}
+					}
+				} else if (Array.isArray(dep)) {
+					for (var i = 0; i < dep.length; i++) {
+						var requiredKey = dep[i];
+						if (data[requiredKey] === undefined) {
+							error = this.createError(ErrorCodes.OBJECT_DEPENDENCY_KEY, {key: depKey, missing: requiredKey}).prefixWith(null, "" + i).prefixWith(null, depKey).prefixWith(null, "dependencies");
+							if (this.handleError(error)) {
+								return error;
+							}
+						}
+					}
+				} else {
+					if (error = this.validateAll(data, dep, [], ["dependencies", depKey], dataPointerPath)) {
+						return error;
+					}
+				}
+			}
+		}
+	}
+	return null;
+};
+
+ValidatorContext.prototype.validateCombinations = function validateCombinations(data, schema, dataPointerPath) {
+	return this.validateAllOf(data, schema, dataPointerPath)
+		|| this.validateAnyOf(data, schema, dataPointerPath)
+		|| this.validateOneOf(data, schema, dataPointerPath)
+		|| this.validateNot(data, schema, dataPointerPath)
+		|| null;
+};
+
+ValidatorContext.prototype.validateAllOf = function validateAllOf(data, schema, dataPointerPath) {
+	if (schema.allOf === undefined) {
+		return null;
+	}
+	var error;
+	for (var i = 0; i < schema.allOf.length; i++) {
+		var subSchema = schema.allOf[i];
+		if (error = this.validateAll(data, subSchema, [], ["allOf", i], dataPointerPath)) {
+			return error;
+		}
+	}
+	return null;
+};
+
+ValidatorContext.prototype.validateAnyOf = function validateAnyOf(data, schema, dataPointerPath) {
+	if (schema.anyOf === undefined) {
+		return null;
+	}
+	var errors = [];
+	var startErrorCount = this.errors.length;
+	var oldUnknownPropertyPaths, oldKnownPropertyPaths;
+	if (this.trackUnknownProperties) {
+		oldUnknownPropertyPaths = this.unknownPropertyPaths;
+		oldKnownPropertyPaths = this.knownPropertyPaths;
+	}
+	var errorAtEnd = true;
+	for (var i = 0; i < schema.anyOf.length; i++) {
+		if (this.trackUnknownProperties) {
+			this.unknownPropertyPaths = {};
+			this.knownPropertyPaths = {};
+		}
+		var subSchema = schema.anyOf[i];
+
+		var errorCount = this.errors.length;
+		var error = this.validateAll(data, subSchema, [], ["anyOf", i], dataPointerPath);
+
+		if (error === null && errorCount === this.errors.length) {
+			this.errors = this.errors.slice(0, startErrorCount);
+
+			if (this.trackUnknownProperties) {
+				for (var knownKey in this.knownPropertyPaths) {
+					oldKnownPropertyPaths[knownKey] = true;
+					delete oldUnknownPropertyPaths[knownKey];
+				}
+				for (var unknownKey in this.unknownPropertyPaths) {
+					if (!oldKnownPropertyPaths[unknownKey]) {
+						oldUnknownPropertyPaths[unknownKey] = true;
+					}
+				}
+				// We need to continue looping so we catch all the property definitions, but we don't want to return an error
+				errorAtEnd = false;
+				continue;
+			}
+
+			return null;
+		}
+		if (error) {
+			errors.push(error.prefixWith(null, "" + i).prefixWith(null, "anyOf"));
+		}
+	}
+	if (this.trackUnknownProperties) {
+		this.unknownPropertyPaths = oldUnknownPropertyPaths;
+		this.knownPropertyPaths = oldKnownPropertyPaths;
+	}
+	if (errorAtEnd) {
+		errors = errors.concat(this.errors.slice(startErrorCount));
+		this.errors = this.errors.slice(0, startErrorCount);
+		return this.createError(ErrorCodes.ANY_OF_MISSING, {}, "", "/anyOf", errors);
+	}
+};
+
+ValidatorContext.prototype.validateOneOf = function validateOneOf(data, schema, dataPointerPath) {
+	if (schema.oneOf === undefined) {
+		return null;
+	}
+	var validIndex = null;
+	var errors = [];
+	var startErrorCount = this.errors.length;
+	var oldUnknownPropertyPaths, oldKnownPropertyPaths;
+	if (this.trackUnknownProperties) {
+		oldUnknownPropertyPaths = this.unknownPropertyPaths;
+		oldKnownPropertyPaths = this.knownPropertyPaths;
+	}
+	for (var i = 0; i < schema.oneOf.length; i++) {
+		if (this.trackUnknownProperties) {
+			this.unknownPropertyPaths = {};
+			this.knownPropertyPaths = {};
+		}
+		var subSchema = schema.oneOf[i];
+
+		var errorCount = this.errors.length;
+		var error = this.validateAll(data, subSchema, [], ["oneOf", i], dataPointerPath);
+
+		if (error === null && errorCount === this.errors.length) {
+			if (validIndex === null) {
+				validIndex = i;
+			} else {
+				this.errors = this.errors.slice(0, startErrorCount);
+				return this.createError(ErrorCodes.ONE_OF_MULTIPLE, {index1: validIndex, index2: i}, "", "/oneOf");
+			}
+			if (this.trackUnknownProperties) {
+				for (var knownKey in this.knownPropertyPaths) {
+					oldKnownPropertyPaths[knownKey] = true;
+					delete oldUnknownPropertyPaths[knownKey];
+				}
+				for (var unknownKey in this.unknownPropertyPaths) {
+					if (!oldKnownPropertyPaths[unknownKey]) {
+						oldUnknownPropertyPaths[unknownKey] = true;
+					}
+				}
+			}
+		} else if (error) {
+			errors.push(error.prefixWith(null, "" + i).prefixWith(null, "oneOf"));
+		}
+	}
+	if (this.trackUnknownProperties) {
+		this.unknownPropertyPaths = oldUnknownPropertyPaths;
+		this.knownPropertyPaths = oldKnownPropertyPaths;
+	}
+	if (validIndex === null) {
+		errors = errors.concat(this.errors.slice(startErrorCount));
+		this.errors = this.errors.slice(0, startErrorCount);
+		return this.createError(ErrorCodes.ONE_OF_MISSING, {}, "", "/oneOf", errors);
+	} else {
+		this.errors = this.errors.slice(0, startErrorCount);
+	}
+	return null;
+};
+
+ValidatorContext.prototype.validateNot = function validateNot(data, schema, dataPointerPath) {
+	if (schema.not === undefined) {
+		return null;
+	}
+	var oldErrorCount = this.errors.length;
+	var oldUnknownPropertyPaths, oldKnownPropertyPaths;
+	if (this.trackUnknownProperties) {
+		oldUnknownPropertyPaths = this.unknownPropertyPaths;
+		oldKnownPropertyPaths = this.knownPropertyPaths;
+		this.unknownPropertyPaths = {};
+		this.knownPropertyPaths = {};
+	}
+	var error = this.validateAll(data, schema.not, null, null, dataPointerPath);
+	var notErrors = this.errors.slice(oldErrorCount);
+	this.errors = this.errors.slice(0, oldErrorCount);
+	if (this.trackUnknownProperties) {
+		this.unknownPropertyPaths = oldUnknownPropertyPaths;
+		this.knownPropertyPaths = oldKnownPropertyPaths;
+	}
+	if (error === null && notErrors.length === 0) {
+		return this.createError(ErrorCodes.NOT_PASSED, {}, "", "/not");
+	}
+	return null;
+};
+
+// parseURI() and resolveUrl() are from https://gist.github.com/1088850
+//   -  released as public domain by author ("Yaffle") - see comments on gist
+
+function parseURI(url) {
+	var m = String(url).replace(/^\s+|\s+$/g, '').match(/^([^:\/?#]+:)?(\/\/(?:[^:@]*(?::[^:@]*)?@)?(([^:\/?#]*)(?::(\d*))?))?([^?#]*)(\?[^#]*)?(#[\s\S]*)?/);
+	// authority = '//' + user + ':' + pass '@' + hostname + ':' port
+	return (m ? {
+		href     : m[0] || '',
+		protocol : m[1] || '',
+		authority: m[2] || '',
+		host     : m[3] || '',
+		hostname : m[4] || '',
+		port     : m[5] || '',
+		pathname : m[6] || '',
+		search   : m[7] || '',
+		hash     : m[8] || ''
+	} : null);
+}
+
+function resolveUrl(base, href) {// RFC 3986
+
+	function removeDotSegments(input) {
+		var output = [];
+		input.replace(/^(\.\.?(\/|$))+/, '')
+			.replace(/\/(\.(\/|$))+/g, '/')
+			.replace(/\/\.\.$/, '/../')
+			.replace(/\/?[^\/]*/g, function (p) {
+				if (p === '/..') {
+					output.pop();
+				} else {
+					output.push(p);
+				}
+		});
+		return output.join('').replace(/^\//, input.charAt(0) === '/' ? '/' : '');
+	}
+
+	href = parseURI(href || '');
+	base = parseURI(base || '');
+
+	return !href || !base ? null : (href.protocol || base.protocol) +
+		(href.protocol || href.authority ? href.authority : base.authority) +
+		removeDotSegments(href.protocol || href.authority || href.pathname.charAt(0) === '/' ? href.pathname : (href.pathname ? ((base.authority && !base.pathname ? '/' : '') + base.pathname.slice(0, base.pathname.lastIndexOf('/') + 1) + href.pathname) : base.pathname)) +
+		(href.protocol || href.authority || href.pathname ? href.search : (href.search || base.search)) +
+		href.hash;
+}
+
+function getDocumentUri(uri) {
+	return uri.split('#')[0];
+}
+function normSchema(schema, baseUri) {
+	if (schema && typeof schema === "object") {
+		if (baseUri === undefined) {
+			baseUri = schema.id;
+		} else if (typeof schema.id === "string") {
+			baseUri = resolveUrl(baseUri, schema.id);
+			schema.id = baseUri;
+		}
+		if (Array.isArray(schema)) {
+			for (var i = 0; i < schema.length; i++) {
+				normSchema(schema[i], baseUri);
+			}
+		} else {
+			if (typeof schema['$ref'] === "string") {
+				schema['$ref'] = resolveUrl(baseUri, schema['$ref']);
+			}
+			for (var key in schema) {
+				if (key !== "enum") {
+					normSchema(schema[key], baseUri);
+				}
+			}
+		}
+	}
+}
+
+var ErrorCodes = {
+	INVALID_TYPE: 0,
+	ENUM_MISMATCH: 1,
+	ANY_OF_MISSING: 10,
+	ONE_OF_MISSING: 11,
+	ONE_OF_MULTIPLE: 12,
+	NOT_PASSED: 13,
+	// Numeric errors
+	NUMBER_MULTIPLE_OF: 100,
+	NUMBER_MINIMUM: 101,
+	NUMBER_MINIMUM_EXCLUSIVE: 102,
+	NUMBER_MAXIMUM: 103,
+	NUMBER_MAXIMUM_EXCLUSIVE: 104,
+	// String errors
+	STRING_LENGTH_SHORT: 200,
+	STRING_LENGTH_LONG: 201,
+	STRING_PATTERN: 202,
+	// Object errors
+	OBJECT_PROPERTIES_MINIMUM: 300,
+	OBJECT_PROPERTIES_MAXIMUM: 301,
+	OBJECT_REQUIRED: 302,
+	OBJECT_ADDITIONAL_PROPERTIES: 303,
+	OBJECT_DEPENDENCY_KEY: 304,
+	// Array errors
+	ARRAY_LENGTH_SHORT: 400,
+	ARRAY_LENGTH_LONG: 401,
+	ARRAY_UNIQUE: 402,
+	ARRAY_ADDITIONAL_ITEMS: 403,
+	// Custom/user-defined errors
+	FORMAT_CUSTOM: 500,
+	KEYWORD_CUSTOM: 501,
+	// Schema structure
+	CIRCULAR_REFERENCE: 600,
+	// Non-standard validation options
+	UNKNOWN_PROPERTY: 1000
+};
+var ErrorCodeLookup = {};
+for (var key in ErrorCodes) {
+	ErrorCodeLookup[ErrorCodes[key]] = key;
+}
+var ErrorMessagesDefault = {
+	INVALID_TYPE: "invalid type: {type} (expected {expected})",
+	ENUM_MISMATCH: "No enum match for: {value}",
+	ANY_OF_MISSING: "Data does not match any schemas from \"anyOf\"",
+	ONE_OF_MISSING: "Data does not match any schemas from \"oneOf\"",
+	ONE_OF_MULTIPLE: "Data is valid against more than one schema from \"oneOf\": indices {index1} and {index2}",
+	NOT_PASSED: "Data matches schema from \"not\"",
+	// Numeric errors
+	NUMBER_MULTIPLE_OF: "Value {value} is not a multiple of {multipleOf}",
+	NUMBER_MINIMUM: "Value {value} is less than minimum {minimum}",
+	NUMBER_MINIMUM_EXCLUSIVE: "Value {value} is equal to exclusive minimum {minimum}",
+	NUMBER_MAXIMUM: "Value {value} is greater than maximum {maximum}",
+	NUMBER_MAXIMUM_EXCLUSIVE: "Value {value} is equal to exclusive maximum {maximum}",
+	// String errors
+	STRING_LENGTH_SHORT: "String is too short ({length} chars), minimum {minimum}",
+	STRING_LENGTH_LONG: "String is too long ({length} chars), maximum {maximum}",
+	STRING_PATTERN: "String does not match pattern: {pattern}",
+	// Object errors
+	OBJECT_PROPERTIES_MINIMUM: "Too few properties defined ({propertyCount}), minimum {minimum}",
+	OBJECT_PROPERTIES_MAXIMUM: "Too many properties defined ({propertyCount}), maximum {maximum}",
+	OBJECT_REQUIRED: "Missing required property: {key}",
+	OBJECT_ADDITIONAL_PROPERTIES: "Additional properties not allowed",
+	OBJECT_DEPENDENCY_KEY: "Dependency failed - key must exist: {missing} (due to key: {key})",
+	// Array errors
+	ARRAY_LENGTH_SHORT: "Array is too short ({length}), minimum {minimum}",
+	ARRAY_LENGTH_LONG: "Array is too long ({length}), maximum {maximum}",
+	ARRAY_UNIQUE: "Array items are not unique (indices {match1} and {match2})",
+	ARRAY_ADDITIONAL_ITEMS: "Additional items not allowed",
+	// Format errors
+	FORMAT_CUSTOM: "Format validation failed ({message})",
+	KEYWORD_CUSTOM: "Keyword failed: {key} ({message})",
+	// Schema structure
+	CIRCULAR_REFERENCE: "Circular $refs: {urls}",
+	// Non-standard validation options
+	UNKNOWN_PROPERTY: "Unknown property (not in schema)"
+};
+
+function ValidationError(code, message, dataPath, schemaPath, subErrors) {
+	Error.call(this);
+	if (code === undefined) {
+		throw new Error ("No code supplied for error: "+ message);
+	}
+	this.message = message;
+	this.code = code;
+	this.dataPath = dataPath || "";
+	this.schemaPath = schemaPath || "";
+	this.subErrors = subErrors || null;
+
+	var err = new Error(this.message);
+	this.stack = err.stack || err.stacktrace;
+	if (!this.stack) {
+		try {
+			throw err;
+		}
+		catch(err) {
+			this.stack = err.stack || err.stacktrace;
+		}
+	}
+}
+ValidationError.prototype = Object.create(Error.prototype);
+ValidationError.prototype.constructor = ValidationError;
+ValidationError.prototype.name = 'ValidationError';
+
+ValidationError.prototype.prefixWith = function (dataPrefix, schemaPrefix) {
+	if (dataPrefix !== null) {
+		dataPrefix = dataPrefix.replace(/~/g, "~0").replace(/\//g, "~1");
+		this.dataPath = "/" + dataPrefix + this.dataPath;
+	}
+	if (schemaPrefix !== null) {
+		schemaPrefix = schemaPrefix.replace(/~/g, "~0").replace(/\//g, "~1");
+		this.schemaPath = "/" + schemaPrefix + this.schemaPath;
+	}
+	if (this.subErrors !== null) {
+		for (var i = 0; i < this.subErrors.length; i++) {
+			this.subErrors[i].prefixWith(dataPrefix, schemaPrefix);
+		}
+	}
+	return this;
+};
+
+function isTrustedUrl(baseUrl, testUrl) {
+	if(testUrl.substring(0, baseUrl.length) === baseUrl){
+		var remainder = testUrl.substring(baseUrl.length);
+		if ((testUrl.length > 0 && testUrl.charAt(baseUrl.length - 1) === "/")
+			|| remainder.charAt(0) === "#"
+			|| remainder.charAt(0) === "?") {
+			return true;
+		}
+	}
+	return false;
+}
+
+var languages = {};
+function createApi(language) {
+	var globalContext = new ValidatorContext();
+	var currentLanguage = language || 'en';
+	var api = {
+		addFormat: function () {
+			globalContext.addFormat.apply(globalContext, arguments);
+		},
+		language: function (code) {
+			if (!code) {
+				return currentLanguage;
+			}
+			if (!languages[code]) {
+				code = code.split('-')[0]; // fall back to base language
+			}
+			if (languages[code]) {
+				currentLanguage = code;
+				return code; // so you can tell if fall-back has happened
+			}
+			return false;
+		},
+		addLanguage: function (code, messageMap) {
+			var key;
+			for (key in ErrorCodes) {
+				if (messageMap[key] && !messageMap[ErrorCodes[key]]) {
+					messageMap[ErrorCodes[key]] = messageMap[key];
+				}
+			}
+			var rootCode = code.split('-')[0];
+			if (!languages[rootCode]) { // use for base language if not yet defined
+				languages[code] = messageMap;
+				languages[rootCode] = messageMap;
+			} else {
+				languages[code] = Object.create(languages[rootCode]);
+				for (key in messageMap) {
+					if (typeof languages[rootCode][key] === 'undefined') {
+						languages[rootCode][key] = messageMap[key];
+					}
+					languages[code][key] = messageMap[key];
+				}
+			}
+			return this;
+		},
+		freshApi: function (language) {
+			var result = createApi();
+			if (language) {
+				result.language(language);
+			}
+			return result;
+		},
+		validate: function (data, schema, checkRecursive, banUnknownProperties) {
+			var context = new ValidatorContext(globalContext, false, languages[currentLanguage], checkRecursive, banUnknownProperties);
+			if (typeof schema === "string") {
+				schema = {"$ref": schema};
+			}
+			context.addSchema("", schema);
+			var error = context.validateAll(data, schema, null, null, "");
+			if (!error && banUnknownProperties) {
+				error = context.banUnknownProperties();
+			}
+			this.error = error;
+			this.missing = context.missing;
+			this.valid = (error === null);
+			return this.valid;
+		},
+		validateResult: function () {
+			var result = {};
+			this.validate.apply(result, arguments);
+			return result;
+		},
+		validateMultiple: function (data, schema, checkRecursive, banUnknownProperties) {
+			var context = new ValidatorContext(globalContext, true, languages[currentLanguage], checkRecursive, banUnknownProperties);
+			if (typeof schema === "string") {
+				schema = {"$ref": schema};
+			}
+			context.addSchema("", schema);
+			context.validateAll(data, schema, null, null, "");
+			if (banUnknownProperties) {
+				context.banUnknownProperties();
+			}
+			var result = {};
+			result.errors = context.errors;
+			result.missing = context.missing;
+			result.valid = (result.errors.length === 0);
+			return result;
+		},
+		addSchema: function () {
+			return globalContext.addSchema.apply(globalContext, arguments);
+		},
+		getSchema: function () {
+			return globalContext.getSchema.apply(globalContext, arguments);
+		},
+		getSchemaMap: function () {
+			return globalContext.getSchemaMap.apply(globalContext, arguments);
+		},
+		getSchemaUris: function () {
+			return globalContext.getSchemaUris.apply(globalContext, arguments);
+		},
+		getMissingUris: function () {
+			return globalContext.getMissingUris.apply(globalContext, arguments);
+		},
+		dropSchemas: function () {
+			globalContext.dropSchemas.apply(globalContext, arguments);
+		},
+		defineKeyword: function () {
+			globalContext.defineKeyword.apply(globalContext, arguments);
+		},
+		defineError: function (codeName, codeNumber, defaultMessage) {
+			if (typeof codeName !== 'string' || !/^[A-Z]+(_[A-Z]+)*$/.test(codeName)) {
+				throw new Error('Code name must be a string in UPPER_CASE_WITH_UNDERSCORES');
+			}
+			if (typeof codeNumber !== 'number' || codeNumber%1 !== 0 || codeNumber < 10000) {
+				throw new Error('Code number must be an integer > 10000');
+			}
+			if (typeof ErrorCodes[codeName] !== 'undefined') {
+				throw new Error('Error already defined: ' + codeName + ' as ' + ErrorCodes[codeName]);
+			}
+			if (typeof ErrorCodeLookup[codeNumber] !== 'undefined') {
+				throw new Error('Error code already used: ' + ErrorCodeLookup[codeNumber] + ' as ' + codeNumber);
+			}
+			ErrorCodes[codeName] = codeNumber;
+			ErrorCodeLookup[codeNumber] = codeName;
+			ErrorMessagesDefault[codeName] = ErrorMessagesDefault[codeNumber] = defaultMessage;
+			for (var langCode in languages) {
+				var language = languages[langCode];
+				if (language[codeName]) {
+					language[codeNumber] = language[codeNumber] || language[codeName];
+				}
+			}
+		},
+		reset: function () {
+			globalContext.reset();
+			this.error = null;
+			this.missing = [];
+			this.valid = true;
+		},
+		missing: [],
+		error: null,
+		valid: true,
+		normSchema: normSchema,
+		resolveUrl: resolveUrl,
+		getDocumentUri: getDocumentUri,
+		errorCodes: ErrorCodes
+	};
+	return api;
+}
+
+var tv4 = createApi();
+tv4.addLanguage('en-gb', ErrorMessagesDefault);
+
+//legacy property
+tv4.tv4 = tv4;
+
+return tv4; // used by _header.js to globalise.
+
+}));
+
+/***/ }),
+/* 108 */
+/***/ (function(module, exports) {
+
+angular.module("schemaForm").run(["$templateCache", function($templateCache) {$templateCache.put("decorators/bootstrap/actions-trcl.html","<div class=\"btn-group schema-form-actions {{form.htmlClass}}\" ng-transclude=\"\"></div>");
+$templateCache.put("decorators/bootstrap/actions.html","<div class=\"btn-group schema-form-actions {{form.htmlClass}}\"><input ng-repeat-start=\"item in form.items\" type=\"submit\" class=\"btn {{ item.style || \'btn-default\' }} {{form.fieldHtmlClass}}\" value=\"{{item.title}}\" ng-if=\"item.type === \'submit\'\"> <button ng-repeat-end=\"\" class=\"btn {{ item.style || \'btn-default\' }} {{form.fieldHtmlClass}}\" type=\"button\" ng-disabled=\"form.readonly\" ng-if=\"item.type !== \'submit\'\" ng-click=\"buttonClick($event,item)\"><span ng-if=\"item.icon\" class=\"{{item.icon}}\"></span>{{item.title}}</button></div>");
+$templateCache.put("decorators/bootstrap/array.html","<div class=\"schema-form-array {{form.htmlClass}}\" sf-field-model=\"sf-new-array\" sf-new-array=\"\"><label class=\"control-label\" ng-show=\"showTitle()\">{{ form.title }}</label><ol class=\"list-group\" sf-field-model=\"\" ui-sortable=\"form.sortOptions\"><li class=\"list-group-item {{form.fieldHtmlClass}}\" schema-form-array-items=\"\" sf-field-model=\"ng-repeat\" ng-repeat=\"item in $$value$$ track by $index\"><button ng-hide=\"form.readonly || form.remove === null\" ng-click=\"deleteFromArray($index)\" ng-disabled=\"form.schema.minItems >= modelArray.length\" style=\"position: relative; z-index: 20;\" type=\"button\" class=\"close pull-right\"><span aria-hidden=\"true\">&times;</span><span class=\"sr-only\">Close</span></button></li></ol><div class=\"clearfix\" style=\"padding: 15px;\" ng-model=\"modelArray\" schema-validate=\"form\"><div class=\"help-block\" ng-show=\"(hasError() && errorMessage(schemaError())) || form.description\" ng-bind-html=\"(hasError() && errorMessage(schemaError())) || form.description\"></div><button ng-hide=\"form.readonly || form.add === null\" ng-click=\"appendToArray()\" ng-disabled=\"form.schema.maxItems <= modelArray.length\" type=\"button\" class=\"btn {{ form.style.add || \'btn-default\' }} pull-right\"><i class=\"glyphicon glyphicon-plus\"></i> {{ form.add || \'Add\'}}</button></div></div>");
+$templateCache.put("decorators/bootstrap/checkbox.html","<div class=\"checkbox schema-form-checkbox {{form.htmlClass}}\" ng-class=\"{\'has-error\': form.disableErrorState !== true && hasError(), \'has-success\': form.disableSuccessState !== true && hasSuccess()}\"><label class=\"{{form.labelHtmlClass}}\"><input type=\"checkbox\" sf-changed=\"form\" ng-disabled=\"form.readonly\" sf-field-model=\"\" schema-validate=\"form\" class=\"{{form.fieldHtmlClass}}\" name=\"{{form.key.slice(-1)[0]}}\"> <span ng-bind-html=\"form.title\"></span></label><div class=\"help-block\" sf-message=\"form.description\"></div></div>");
+$templateCache.put("decorators/bootstrap/checkboxes.html","<div sf-field-model=\"sf-new-array\" sf-new-array=\"\" class=\"form-group schema-form-checkboxes {{form.htmlClass}}\" ng-class=\"{\'has-error\': form.disableErrorState !== true && hasError(), \'has-success\': form.disableSuccessState !== true && hasSuccess()}\"><label class=\"control-label {{form.labelHtmlClass}}\" sf-field-model=\"\" schema-validate=\"form\" ng-show=\"showTitle()\">{{form.title}}</label><div class=\"checkbox\" ng-repeat=\"val in titleMapValues track by $index\"><label><input type=\"checkbox\" ng-disabled=\"form.readonly\" sf-changed=\"form\" class=\"{{form.fieldHtmlClass}}\" ng-model=\"titleMapValues[$index]\" name=\"{{form.key.slice(-1)[0]}}\"> <span ng-bind-html=\"form.titleMap[$index].name\"></span></label></div><div class=\"help-block\" sf-message=\"form.description\"></div></div>");
+$templateCache.put("decorators/bootstrap/default.html","<div class=\"form-group schema-form-{{form.type}} {{form.htmlClass}}\" ng-class=\"{\'has-error\': form.disableErrorState !== true && hasError(), \'has-success\': form.disableSuccessState !== true && hasSuccess(), \'has-feedback\': form.feedback !== false }\"><label class=\"control-label {{form.labelHtmlClass}}\" ng-class=\"{\'sr-only\': !showTitle()}\" for=\"{{form.key.slice(-1)[0]}}\">{{form.title}}</label> <input ng-if=\"!form.fieldAddonLeft && !form.fieldAddonRight\" ng-show=\"form.key\" type=\"{{form.type}}\" step=\"any\" sf-changed=\"form\" placeholder=\"{{form.placeholder}}\" class=\"form-control {{form.fieldHtmlClass}}\" id=\"{{form.key.slice(-1)[0]}}\" sf-field-model=\"\" ng-disabled=\"form.readonly\" schema-validate=\"form\" name=\"{{form.key.slice(-1)[0]}}\" aria-describedby=\"{{form.key.slice(-1)[0] + \'Status\'}}\"><div ng-if=\"form.fieldAddonLeft || form.fieldAddonRight\" ng-class=\"{\'input-group\': (form.fieldAddonLeft || form.fieldAddonRight)}\"><span ng-if=\"form.fieldAddonLeft\" class=\"input-group-addon\" ng-bind-html=\"form.fieldAddonLeft\"></span> <input ng-show=\"form.key\" type=\"{{form.type}}\" step=\"any\" sf-changed=\"form\" placeholder=\"{{form.placeholder}}\" class=\"form-control {{form.fieldHtmlClass}}\" id=\"{{form.key.slice(-1)[0]}}\" sf-field-model=\"\" ng-disabled=\"form.readonly\" schema-validate=\"form\" name=\"{{form.key.slice(-1)[0]}}\" aria-describedby=\"{{form.key.slice(-1)[0] + \'Status\'}}\"> <span ng-if=\"form.fieldAddonRight\" class=\"input-group-addon\" ng-bind-html=\"form.fieldAddonRight\"></span></div><span ng-if=\"form.feedback !== false\" class=\"form-control-feedback\" ng-class=\"evalInScope(form.feedback) || {\'glyphicon\': true, \'glyphicon-ok\': hasSuccess(), \'glyphicon-remove\': hasError() }\" aria-hidden=\"true\"></span> <span ng-if=\"hasError() || hasSuccess()\" id=\"{{form.key.slice(-1)[0] + \'Status\'}}\" class=\"sr-only\">{{ hasSuccess() ? \'(success)\' : \'(error)\' }}</span><div class=\"help-block\" sf-message=\"form.description\"></div></div>");
+$templateCache.put("decorators/bootstrap/fieldset.html","<fieldset ng-disabled=\"form.readonly\" class=\"schema-form-fieldset {{form.htmlClass}}\"><legend ng-class=\"{\'sr-only\': !showTitle() }\">{{ form.title }}</legend><div class=\"help-block\" ng-show=\"form.description\" ng-bind-html=\"form.description\"></div></fieldset>");
+$templateCache.put("decorators/bootstrap/help.html","<div class=\"helpvalue schema-form-helpvalue {{form.htmlClass}}\" ng-bind-html=\"form.helpvalue\"></div>");
+$templateCache.put("decorators/bootstrap/radio-buttons.html","<div class=\"form-group schema-form-radiobuttons {{form.htmlClass}}\" ng-class=\"{\'has-error\': form.disableErrorState !== true && hasError(), \'has-success\': form.disableSuccessState !== true && hasSuccess()}\"><div><label class=\"control-label {{form.labelHtmlClass}}\" ng-show=\"showTitle()\">{{form.title}}</label></div><div class=\"btn-group\"><label sf-field-model=\"replaceAll\" class=\"btn {{ (item.value === $$value$$) ? form.style.selected || \'btn-default\' : form.style.unselected || \'btn-default\'; }}\" ng-class=\"{ active: item.value === $$value$$ }\" ng-repeat=\"item in form.titleMap\"><input type=\"radio\" class=\"{{form.fieldHtmlClass}}\" sf-changed=\"form\" style=\"display: none;\" ng-disabled=\"form.readonly\" sf-field-model=\"\" schema-validate=\"form\" ng-value=\"item.value\" name=\"{{form.key.join(\'.\')}}\"> <span ng-bind-html=\"item.name\"></span></label></div><div class=\"help-block\" sf-message=\"form.description\"></div></div>");
+$templateCache.put("decorators/bootstrap/radios-inline.html","<div class=\"form-group schema-form-radios-inline {{form.htmlClass}}\" ng-class=\"{\'has-error\': form.disableErrorState !== true && hasError(), \'has-success\': form.disableSuccessState !== true && hasSuccess()}\"><label class=\"control-label {{form.labelHtmlClass}}\" ng-show=\"showTitle()\" sf-field-model=\"\" schema-validate=\"form\">{{form.title}}</label><div><label class=\"radio-inline\" ng-repeat=\"item in form.titleMap\"><input type=\"radio\" class=\"{{form.fieldHtmlClass}}\" sf-changed=\"form\" ng-disabled=\"form.readonly\" sf-field-model=\"\" ng-value=\"item.value\" name=\"{{form.key.join(\'.\')}}\"> <span ng-bind-html=\"item.name\"></span></label></div><div class=\"help-block\" sf-message=\"form.description\"></div></div>");
+$templateCache.put("decorators/bootstrap/radios.html","<div class=\"form-group schema-form-radios {{form.htmlClass}}\" ng-class=\"{\'has-error\': form.disableErrorState !== true && hasError(), \'has-success\': form.disableSuccessState !== true && hasSuccess()}\"><label class=\"control-label {{form.labelHtmlClass}}\" sf-field-model=\"\" schema-validate=\"form\" ng-show=\"showTitle()\">{{form.title}}</label><div class=\"radio\" ng-repeat=\"item in form.titleMap\"><label><input type=\"radio\" class=\"{{form.fieldHtmlClass}}\" sf-changed=\"form\" ng-disabled=\"form.readonly\" sf-field-model=\"\" ng-value=\"item.value\" name=\"{{form.key.join(\'.\')}}\"> <span ng-bind-html=\"item.name\"></span></label></div><div class=\"help-block\" sf-message=\"form.description\"></div></div>");
+$templateCache.put("decorators/bootstrap/section.html","<div class=\"schema-form-section {{form.htmlClass}}\"></div>");
+$templateCache.put("decorators/bootstrap/select.html","<div class=\"form-group {{form.htmlClass}} schema-form-select\" ng-class=\"{\'has-error\': form.disableErrorState !== true && hasError(), \'has-success\': form.disableSuccessState !== true && hasSuccess(), \'has-feedback\': form.feedback !== false}\"><label class=\"control-label {{form.labelHtmlClass}}\" ng-show=\"showTitle()\">{{form.title}}</label><select sf-field-model=\"\" ng-disabled=\"form.readonly\" sf-changed=\"form\" class=\"form-control {{form.fieldHtmlClass}}\" schema-validate=\"form\" ng-options=\"item.value as item.name group by item.group for item in form.titleMap\" name=\"{{form.key.slice(-1)[0]}}\"></select><div class=\"help-block\" sf-message=\"form.description\"></div></div>");
+$templateCache.put("decorators/bootstrap/submit.html","<div class=\"form-group schema-form-submit {{form.htmlClass}}\"><input type=\"submit\" class=\"btn {{ form.style || \'btn-primary\' }} {{form.fieldHtmlClass}}\" value=\"{{form.title}}\" ng-disabled=\"form.readonly\" ng-if=\"form.type === \'submit\'\"> <button class=\"btn {{ form.style || \'btn-default\' }}\" type=\"button\" ng-click=\"buttonClick($event,form)\" ng-disabled=\"form.readonly\" ng-if=\"form.type !== \'submit\'\"><span ng-if=\"form.icon\" class=\"{{form.icon}}\"></span> {{form.title}}</button></div>");
+$templateCache.put("decorators/bootstrap/tabarray.html","<div ng-init=\"selected = { tab: 0 }\" ng-model=\"modelArray\" schema-validate=\"form\" sf-field-model=\"sf-new-array\" sf-new-array=\"\" class=\"clearfix schema-form-tabarray schema-form-tabarray-{{form.tabType || \'left\'}} {{form.htmlClass}}\"><div ng-if=\"!form.tabType || form.tabType !== \'right\'\" ng-class=\"{\'col-xs-3\': !form.tabType || form.tabType === \'left\'}\"><ul class=\"nav nav-tabs\" ng-class=\"{ \'tabs-left\': !form.tabType || form.tabType === \'left\'}\"><li sf-field-model=\"ng-repeat\" ng-repeat=\"item in $$value$$ track by $index\" ng-click=\"$event.preventDefault() || (selected.tab = $index)\" ng-class=\"{active: selected.tab === $index}\"><a href=\"#\">{{interp(form.title,{\'$index\':$index, value: item}) || $index}}</a></li><li ng-hide=\"form.readonly\" ng-disabled=\"form.schema.maxItems <= modelArray.length\" ng-click=\"$event.preventDefault() || (selected.tab = appendToArray().length - 1)\"><a href=\"#\"><i class=\"glyphicon glyphicon-plus\"></i> {{ form.add || \'Add\'}}</a></li></ul></div><div ng-class=\"{\'col-xs-9\': !form.tabType || form.tabType === \'left\' || form.tabType === \'right\'}\"><div class=\"tab-content {{form.fieldHtmlClass}}\"><div class=\"tab-pane clearfix tab{{selected.tab}} index{{$index}}\" sf-field-model=\"ng-repeat\" ng-repeat=\"item in $$value$$ track by $index\" ng-show=\"selected.tab === $index\" ng-class=\"{active: selected.tab === $index}\"><div schema-form-array-items=\"\"></div><button ng-hide=\"form.readonly\" ng-click=\"selected.tab = deleteFromArray($index).length - 1\" ng-disabled=\"form.schema.minItems >= modelArray.length\" type=\"button\" class=\"btn {{ form.style.remove || \'btn-default\' }} pull-right\"><i class=\"glyphicon glyphicon-trash\"></i> {{ form.remove || \'Remove\'}}</button></div><div class=\"help-block\" ng-show=\"(hasError() && errorMessage(schemaError())) || form.description\" ng-bind-html=\"(hasError() && errorMessage(schemaError())) || form.description\"></div></div></div></div><div ng-if=\"form.tabType === \'right\'\" class=\"col-xs-3\"><ul class=\"nav nav-tabs tabs-right\"><li sf-field-model=\"ng-repeat\" ng-repeat=\"item in $$value$$ track by $index\" ng-click=\"$event.preventDefault() || (selected.tab = $index)\" ng-class=\"{active: selected.tab === $index}\"><a href=\"#\">{{interp(form.title,{\'$index\':$index, value: item}) || $index}}</a></li><li ng-hide=\"form.readonly\" ng-disabled=\"form.schema.maxItems <= modelArray.length\" ng-click=\"$event.preventDefault() || (selected.tab = appendToArray().length - 1)\"><a href=\"#\"><i class=\"glyphicon glyphicon-plus\"></i> {{ form.add || \'Add\'}}</a></li></ul></div>");
+$templateCache.put("decorators/bootstrap/tabs.html","<div ng-init=\"selected = { tab: 0 }\" class=\"schema-form-tabs {{form.htmlClass}}\"><ul class=\"nav nav-tabs\"><li ng-repeat=\"tab in form.tabs\" ng-disabled=\"form.readonly\" ng-click=\"$event.preventDefault() || (selected.tab = $index)\" ng-class=\"{active: selected.tab === $index}\"><a href=\"#\">{{ tab.title }}</a></li></ul><div class=\"tab-content {{form.fieldHtmlClass}}\"></div></div>");
+$templateCache.put("decorators/bootstrap/textarea.html","<div class=\"form-group has-feedback {{form.htmlClass}} schema-form-textarea\" ng-class=\"{\'has-error\': form.disableErrorState !== true && hasError(), \'has-success\': form.disableSuccessState !== true && hasSuccess()}\"><label class=\"control-label {{form.labelHtmlClass}}\" ng-class=\"{\'sr-only\': !showTitle()}\" for=\"{{form.key.slice(-1)[0]}}\">{{form.title}}</label> <textarea ng-if=\"!form.fieldAddonLeft && !form.fieldAddonRight\" class=\"form-control {{form.fieldHtmlClass}}\" id=\"{{form.key.slice(-1)[0]}}\" sf-changed=\"form\" placeholder=\"{{form.placeholder}}\" ng-disabled=\"form.readonly\" sf-field-model=\"\" schema-validate=\"form\" name=\"{{form.key.slice(-1)[0]}}\"></textarea><div ng-if=\"form.fieldAddonLeft || form.fieldAddonRight\" ng-class=\"{\'input-group\': (form.fieldAddonLeft || form.fieldAddonRight)}\"><span ng-if=\"form.fieldAddonLeft\" class=\"input-group-addon\" ng-bind-html=\"form.fieldAddonLeft\"></span> <textarea class=\"form-control {{form.fieldHtmlClass}}\" id=\"{{form.key.slice(-1)[0]}}\" sf-changed=\"form\" placeholder=\"{{form.placeholder}}\" ng-disabled=\"form.readonly\" sf-field-model=\"\" schema-validate=\"form\" name=\"{{form.key.slice(-1)[0]}}\"></textarea> <span ng-if=\"form.fieldAddonRight\" class=\"input-group-addon\" ng-bind-html=\"form.fieldAddonRight\"></span></div><span class=\"help-block\" sf-message=\"form.description\"></span></div>");}]);
+angular.module('schemaForm').config(['schemaFormDecoratorsProvider', 'sfBuilderProvider', 'sfPathProvider',
+function(decoratorsProvider, sfBuilderProvider, sfPathProvider) {
+  var base = 'decorators/bootstrap/';
+
+  var simpleTransclusion  = sfBuilderProvider.builders.simpleTransclusion;
+  var ngModelOptions      = sfBuilderProvider.builders.ngModelOptions;
+  var ngModel             = sfBuilderProvider.builders.ngModel;
+  var sfField             = sfBuilderProvider.builders.sfField;
+  var condition           = sfBuilderProvider.builders.condition;
+  var array               = sfBuilderProvider.builders.array;
+
+  // Tabs is so bootstrap specific that it stays here.
+  var tabs = function(args) {
+    if (args.form.tabs && args.form.tabs.length > 0) {
+      var tabContent = args.fieldFrag.querySelector('.tab-content');
+
+      args.form.tabs.forEach(function(tab, index) {
+        var div = document.createElement('div');
+        div.className = 'tab-pane';
+        div.setAttribute('ng-disabled', 'form.readonly');
+        div.setAttribute('ng-show', 'selected.tab === ' + index);
+        div.setAttribute('ng-class', '{active: selected.tab === ' + index + '}');
+
+        var childFrag = args.build(tab.items, args.path + '.tabs[' + index + '].items', args.state);
+        div.appendChild(childFrag);
+        tabContent.appendChild(div);
+      });
+    }
+  };
+
+  var defaults = [sfField, ngModel, ngModelOptions, condition];
+  decoratorsProvider.defineDecorator('bootstrapDecorator', {
+    textarea: {template: base + 'textarea.html', builder: defaults},
+    fieldset: {template: base + 'fieldset.html', builder: [sfField, simpleTransclusion, condition]},
+    array: {template: base + 'array.html', builder: [sfField, ngModelOptions, ngModel, array, condition]},
+    tabarray: {template: base + 'tabarray.html', builder: [sfField, ngModelOptions, ngModel, array, condition]},
+    tabs: {template: base + 'tabs.html', builder: [sfField, ngModelOptions, tabs, condition]},
+    section: {template: base + 'section.html', builder: [sfField, simpleTransclusion, condition]},
+    conditional: {template: base + 'section.html', builder: [sfField, simpleTransclusion, condition]},
+    actions: {template: base + 'actions.html', builder: defaults},
+    select: {template: base + 'select.html', builder: defaults},
+    checkbox: {template: base + 'checkbox.html', builder: defaults},
+    checkboxes: {template: base + 'checkboxes.html', builder: [sfField, ngModelOptions, ngModel, array, condition]},
+    number: {template: base + 'default.html', builder: defaults},
+    password: {template: base + 'default.html', builder: defaults},
+    submit: {template: base + 'submit.html', builder: defaults},
+    button: {template: base + 'submit.html', builder: defaults},
+    radios: {template: base + 'radios.html', builder: defaults},
+    'radios-inline': {template: base + 'radios-inline.html', builder: defaults},
+    radiobuttons: {template: base + 'radio-buttons.html', builder: defaults},
+    help: {template: base + 'help.html', builder: defaults},
+    'default': {template: base + 'default.html', builder: defaults}
+  }, []);
+
+}]);
+
+
+/***/ }),
+/* 109 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__(110);
+
+/***/ }),
+/* 110 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -75516,8 +77118,8 @@ module.exports = __webpack_require__(105);
 
 var utils = __webpack_require__(5);
 var bind = __webpack_require__(61);
-var Axios = __webpack_require__(107);
-var defaults = __webpack_require__(32);
+var Axios = __webpack_require__(112);
+var defaults = __webpack_require__(33);
 
 /**
  * Create an instance of Axios
@@ -75551,14 +77153,14 @@ axios.create = function create(instanceConfig) {
 
 // Expose Cancel & CancelToken
 axios.Cancel = __webpack_require__(65);
-axios.CancelToken = __webpack_require__(122);
+axios.CancelToken = __webpack_require__(127);
 axios.isCancel = __webpack_require__(64);
 
 // Expose all/spread
 axios.all = function all(promises) {
   return Promise.all(promises);
 };
-axios.spread = __webpack_require__(123);
+axios.spread = __webpack_require__(128);
 
 module.exports = axios;
 
@@ -75567,7 +77169,7 @@ module.exports.default = axios;
 
 
 /***/ }),
-/* 106 */
+/* 111 */
 /***/ (function(module, exports) {
 
 /*!
@@ -75594,18 +77196,18 @@ function isSlowBuffer (obj) {
 
 
 /***/ }),
-/* 107 */
+/* 112 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-var defaults = __webpack_require__(32);
+var defaults = __webpack_require__(33);
 var utils = __webpack_require__(5);
-var InterceptorManager = __webpack_require__(117);
-var dispatchRequest = __webpack_require__(118);
-var isAbsoluteURL = __webpack_require__(120);
-var combineURLs = __webpack_require__(121);
+var InterceptorManager = __webpack_require__(122);
+var dispatchRequest = __webpack_require__(123);
+var isAbsoluteURL = __webpack_require__(125);
+var combineURLs = __webpack_require__(126);
 
 /**
  * Create a new instance of Axios
@@ -75687,7 +77289,7 @@ module.exports = Axios;
 
 
 /***/ }),
-/* 108 */
+/* 113 */
 /***/ (function(module, exports) {
 
 // shim for using process in browser
@@ -75877,7 +77479,7 @@ process.umask = function() { return 0; };
 
 
 /***/ }),
-/* 109 */
+/* 114 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -75896,7 +77498,7 @@ module.exports = function normalizeHeaderName(headers, normalizedName) {
 
 
 /***/ }),
-/* 110 */
+/* 115 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -75929,7 +77531,7 @@ module.exports = function settle(resolve, reject, response) {
 
 
 /***/ }),
-/* 111 */
+/* 116 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -75957,7 +77559,7 @@ module.exports = function enhanceError(error, config, code, request, response) {
 
 
 /***/ }),
-/* 112 */
+/* 117 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -76032,7 +77634,7 @@ module.exports = function buildURL(url, params, paramsSerializer) {
 
 
 /***/ }),
-/* 113 */
+/* 118 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -76076,7 +77678,7 @@ module.exports = function parseHeaders(headers) {
 
 
 /***/ }),
-/* 114 */
+/* 119 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -76151,7 +77753,7 @@ module.exports = (
 
 
 /***/ }),
-/* 115 */
+/* 120 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -76194,7 +77796,7 @@ module.exports = btoa;
 
 
 /***/ }),
-/* 116 */
+/* 121 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -76254,7 +77856,7 @@ module.exports = (
 
 
 /***/ }),
-/* 117 */
+/* 122 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -76313,16 +77915,16 @@ module.exports = InterceptorManager;
 
 
 /***/ }),
-/* 118 */
+/* 123 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
 var utils = __webpack_require__(5);
-var transformData = __webpack_require__(119);
+var transformData = __webpack_require__(124);
 var isCancel = __webpack_require__(64);
-var defaults = __webpack_require__(32);
+var defaults = __webpack_require__(33);
 
 /**
  * Throws a `Cancel` if cancellation has been requested.
@@ -76399,7 +78001,7 @@ module.exports = function dispatchRequest(config) {
 
 
 /***/ }),
-/* 119 */
+/* 124 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -76426,7 +78028,7 @@ module.exports = function transformData(data, headers, fns) {
 
 
 /***/ }),
-/* 120 */
+/* 125 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -76447,7 +78049,7 @@ module.exports = function isAbsoluteURL(url) {
 
 
 /***/ }),
-/* 121 */
+/* 126 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -76468,7 +78070,7 @@ module.exports = function combineURLs(baseURL, relativeURL) {
 
 
 /***/ }),
-/* 122 */
+/* 127 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -76532,7 +78134,7 @@ module.exports = CancelToken;
 
 
 /***/ }),
-/* 123 */
+/* 128 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -76566,51 +78168,107 @@ module.exports = function spread(callback) {
 
 
 /***/ }),
-/* 124 */
+/* 129 */
 /***/ (function(module, exports, __webpack_require__) {
 
 
 //
-__webpack_require__(33);
+__webpack_require__(24);
 
 //
 angular.module("app.require").component("layout", {
     bindings: {},
-    template: __webpack_require__(125),
-    controller: function controller($scope) {
-        console.log("layout cot");
-    }
+    template: __webpack_require__(130),
+    controller: function controller($scope) {}
 });
 
 /***/ }),
-/* 125 */
+/* 130 */
 /***/ (function(module, exports) {
 
 module.exports = "<div class=\"container\">\n    <section ui-view></section>\n</div>";
 
 /***/ }),
-/* 126 */
+/* 131 */
 /***/ (function(module, exports, __webpack_require__) {
 
 
 //
-__webpack_require__(33);
+__webpack_require__(24);
 
 //
 angular.module("app.require").component("pageHome", {
     bindings: {},
-    template: __webpack_require__(127),
+    template: __webpack_require__(132),
     controller: function controller($scope) {}
 });
 
 /***/ }),
-/* 127 */
+/* 132 */
 /***/ (function(module, exports) {
 
-module.exports = "<h1>Hello World!</h1>";
+module.exports = "<h1>Hello World!</h1>\n\n<schema-form />";
 
 /***/ }),
-/* 128 */
+/* 133 */
+/***/ (function(module, exports, __webpack_require__) {
+
+
+//
+__webpack_require__(24);
+
+//
+angular.module("app.require").component("schemaForm", {
+    bindings: {},
+    template: __webpack_require__(134),
+    controller: function controller($scope) {
+
+        $scope.schema = {
+            "type": "object",
+            "title": "Comment",
+            "properties": {
+                "name": {
+                    "title": "Name",
+                    "type": "string"
+                },
+                "email": {
+                    "title": "Email",
+                    "type": "string",
+                    "pattern": "^\\S+@\\S+$",
+                    "description": "Email will be used for evil."
+                },
+                "comment": {
+                    "title": "Comment",
+                    "type": "string",
+                    "maxLength": 20,
+                    "validationMessage": "Don't be greedy!"
+                }
+            },
+            "required": ["name", "email", "comment"]
+        };
+
+        $scope.form = ["name", "email", {
+            "key": "comment",
+            "type": "textarea",
+            "placeholder": "Make a comment"
+        }, {
+            "type": "submit",
+            "style": "btn-info",
+            "title": "OK"
+        }];
+
+        $scope.model = {};
+    }
+});
+
+/***/ }),
+/* 134 */
+/***/ (function(module, exports) {
+
+module.exports = "\nthis is a form\n\n<form\n    sf-schema=\"schema\"\n    sf-form=\"form\"\n    sf-model=\"model\"\n    >\n</form>\n\n{{ schema }}";
+
+/***/ }),
+/* 135 */
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
